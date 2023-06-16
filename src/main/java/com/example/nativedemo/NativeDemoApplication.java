@@ -1,5 +1,8 @@
 package com.example.nativedemo;
 
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.example.nativedemo.entity.Messages;
+import com.example.nativedemo.mapper.MessagesMapper;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -9,8 +12,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
 
+import java.io.Serializable;
+
 @SpringBootApplication(proxyBeanMethods = false)
-public class NativeDemoApplication {
+public class NativeDemoApplication implements Serializable {
 
   public static void main(String[] args) {
     SpringApplication.run(NativeDemoApplication.class, args);
@@ -33,6 +38,17 @@ public class NativeDemoApplication {
       mapper.insert(new Message(null, "Hello World! on runWithXmlMapper"));
       Message message = mapper.select(2);
       System.out.println(message);
+    };
+  }
+
+  @Bean
+  @Order(3)
+  ApplicationRunner runWithMybatisPlus(MessagesMapper messagesMapper) {
+    return args -> {
+      Messages messages = new Messages(null, "Hello MybatisPlus");
+      messagesMapper.insert(messages);
+      System.out.println("simple query:" + messagesMapper.selectById(messages.getId()));
+      System.out.println("lambda query:" + messagesMapper.selectOne(Wrappers.<Messages>lambdaQuery().select(Messages::getMessage).eq(Messages::getId, messages.getId())));
     };
   }
 
