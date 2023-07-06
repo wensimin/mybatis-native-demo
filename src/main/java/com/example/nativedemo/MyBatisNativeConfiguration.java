@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver;
 import com.baomidou.mybatisplus.core.toolkit.support.SFunction;
 import com.baomidou.mybatisplus.core.toolkit.support.SerializedLambda;
 import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
-import com.example.nativedemo.entity.Messages;
 import org.apache.commons.logging.LogFactory;
 import org.apache.ibatis.annotations.DeleteProvider;
 import org.apache.ibatis.annotations.InsertProvider;
@@ -47,11 +46,9 @@ import org.springframework.beans.factory.support.MergedBeanDefinitionPostProcess
 import org.springframework.beans.factory.support.RegisteredBean;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportRuntimeHints;
 import org.springframework.core.ResolvableType;
-import org.springframework.core.type.filter.AssignableTypeFilter;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ReflectionUtils;
 
@@ -90,20 +87,6 @@ public class MyBatisNativeConfiguration {
 
     @Override
     public void registerHints(RuntimeHints hints, ClassLoader classLoader) {
-      ClassPathScanningCandidateComponentProvider provider = new ClassPathScanningCandidateComponentProvider(false);
-      provider.addIncludeFilter(new AssignableTypeFilter(SFunction.class));
-      Set<BeanDefinition> components = provider.findCandidateComponents("com/example");
-      System.out.println("-----------------");
-      for (BeanDefinition component : components)
-      {
-        try {
-          Class cls = Class.forName(component.getBeanClassName());
-          System.out.println(cls);
-          hints.serialization().registerType(cls);
-        } catch (ClassNotFoundException e) {
-          throw new RuntimeException(e);
-        }
-      }
       Stream.of(RawLanguageDriver.class,
           // TODO 增加了MybatisXMLLanguageDriver.class
           XMLLanguageDriver.class, MybatisXMLLanguageDriver.class,
