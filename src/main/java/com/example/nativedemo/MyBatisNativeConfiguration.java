@@ -30,6 +30,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
+import org.springframework.aot.hint.ExecutableMode;
 import org.springframework.aot.hint.MemberCategory;
 import org.springframework.aot.hint.RuntimeHints;
 import org.springframework.aot.hint.RuntimeHintsRegistrar;
@@ -157,7 +158,9 @@ public class MyBatisNativeConfiguration {
         hints.serialization().registerType(SerializedLambda.class);
         hints.serialization().registerType(SFunction.class);
         hints.serialization().registerType(java.lang.invoke.SerializedLambda.class);
-        hints.serialization().registerType(NativeDemoApplication.class);
+        hints.reflection().registerType(SFunction.class);
+        hints.reflection().registerType(SerializedLambda.class);
+        hints.reflection().registerType(java.lang.invoke.SerializedLambda.class);
       };
     }
 
