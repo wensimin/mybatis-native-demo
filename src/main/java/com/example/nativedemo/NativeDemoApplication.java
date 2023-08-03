@@ -1,6 +1,7 @@
 package com.example.nativedemo;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.nativedemo.entity.Messages;
 import com.example.nativedemo.mapper.MessagesMapper;
 import org.apache.ibatis.annotations.Insert;
@@ -48,7 +49,9 @@ public class NativeDemoApplication implements Serializable {
       Messages messages = new Messages(null, "Hello MybatisPlus");
       messagesMapper.insert(messages);
       System.out.println("simple query:" + messagesMapper.selectById(messages.getId()));
-      System.out.println("lambda query:" + messagesMapper.selectOne(Wrappers.<Messages>lambdaQuery().select(Messages::getMessage).eq(Messages::getId, messages.getId())));
+      Page<Messages> page = messagesMapper.selectPage(new Page<>(1, 2), Wrappers.emptyWrapper());
+      System.out.println("total:" + page.getTotal() + ",records" + page.getRecords());
+//      System.out.println("lambda query:" + messagesMapper.selectOne(Wrappers.<Messages>lambdaQuery().select(Messages::getMessage).eq(Messages::getId, messages.getId())));
     };
   }
 

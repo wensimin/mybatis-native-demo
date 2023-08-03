@@ -1,6 +1,12 @@
 package com.example.nativedemo;
 
+import com.baomidou.mybatisplus.core.MybatisParameterHandler;
 import com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver;
+import com.baomidou.mybatisplus.core.conditions.AbstractWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.support.SFunction;
 import com.baomidou.mybatisplus.core.toolkit.support.SerializedLambda;
 import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
@@ -14,6 +20,12 @@ import org.apache.ibatis.cache.decorators.LruCache;
 import org.apache.ibatis.cache.decorators.SoftCache;
 import org.apache.ibatis.cache.decorators.WeakCache;
 import org.apache.ibatis.cache.impl.PerpetualCache;
+import org.apache.ibatis.executor.Executor;
+import org.apache.ibatis.executor.parameter.ParameterHandler;
+import org.apache.ibatis.executor.resultset.ResultSetHandler;
+import org.apache.ibatis.executor.statement.BaseStatementHandler;
+import org.apache.ibatis.executor.statement.RoutingStatementHandler;
+import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.javassist.util.proxy.ProxyFactory;
 import org.apache.ibatis.javassist.util.proxy.RuntimeSupport;
 import org.apache.ibatis.logging.Log;
@@ -23,6 +35,7 @@ import org.apache.ibatis.logging.log4j2.Log4j2Impl;
 import org.apache.ibatis.logging.nologging.NoLoggingImpl;
 import org.apache.ibatis.logging.slf4j.Slf4jImpl;
 import org.apache.ibatis.logging.stdout.StdOutImpl;
+import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.reflection.TypeParameterResolver;
 import org.apache.ibatis.scripting.defaults.RawLanguageDriver;
 import org.apache.ibatis.scripting.xmltags.XMLLanguageDriver;
@@ -30,7 +43,6 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
-import org.springframework.aot.hint.ExecutableMode;
 import org.springframework.aot.hint.MemberCategory;
 import org.springframework.aot.hint.RuntimeHints;
 import org.springframework.aot.hint.RuntimeHintsRegistrar;
@@ -161,6 +173,23 @@ public class MyBatisNativeConfiguration {
         hints.reflection().registerType(SFunction.class);
         hints.reflection().registerType(SerializedLambda.class);
         hints.reflection().registerType(java.lang.invoke.SerializedLambda.class);
+
+        hints.proxies().registerJdkProxy(StatementHandler.class);
+        hints.proxies().registerJdkProxy(Executor.class);
+        hints.proxies().registerJdkProxy(ResultSetHandler.class);
+        hints.proxies().registerJdkProxy(ParameterHandler.class);
+
+//        hints.reflection().registerType(MybatisPlusInterceptor.class);
+        hints.reflection().registerType(AbstractWrapper.class,MemberCategory.values());
+        hints.reflection().registerType(LambdaQueryWrapper.class,MemberCategory.values());
+        hints.reflection().registerType(LambdaUpdateWrapper.class,MemberCategory.values());
+        hints.reflection().registerType(UpdateWrapper.class,MemberCategory.values());
+        hints.reflection().registerType(QueryWrapper.class,MemberCategory.values());
+
+        hints.reflection().registerType(BoundSql.class,MemberCategory.DECLARED_FIELDS);
+        hints.reflection().registerType(RoutingStatementHandler.class,MemberCategory.DECLARED_FIELDS);
+        hints.reflection().registerType(BaseStatementHandler.class,MemberCategory.DECLARED_FIELDS);
+        hints.reflection().registerType(MybatisParameterHandler.class,MemberCategory.DECLARED_FIELDS);
       };
     }
 
