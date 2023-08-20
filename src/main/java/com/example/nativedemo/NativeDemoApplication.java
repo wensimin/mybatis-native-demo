@@ -51,7 +51,7 @@ public class NativeDemoApplication implements Serializable {
       System.out.println("simple query:" + messagesMapper.selectById(messages.getId()));
       Page<Messages> page = messagesMapper.selectPage(new Page<>(1, 2), Wrappers.emptyWrapper());
       System.out.println("total:" + page.getTotal() + ",records" + page.getRecords());
-//      System.out.println("lambda query:" + messagesMapper.selectOne(Wrappers.<Messages>lambdaQuery().select(Messages::getMessage).eq(Messages::getId, messages.getId())));
+      System.out.println("lambda query:" + messagesMapper.selectOne(Wrappers.<Messages>lambdaQuery().select(Messages::getMessage).eq(Messages::getId, messages.getId())));
     };
   }
 

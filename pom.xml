@@ -49,6 +49,11 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.graalvm.sdk</groupId>
+      <artifactId>graal-sdk</artifactId>
+      <version>22.3.1</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -59,6 +64,7 @@
         <configuration>
           <buildArgs combine.children="append">
             <buildArg>--enable-url-protocols=http</buildArg>
+            <buildArg>--features=com.example.nativedemo.LambdaRegistrationFeature</buildArg>
           </buildArgs>
         </configuration>
       </plugin>
