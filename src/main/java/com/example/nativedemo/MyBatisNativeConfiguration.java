@@ -1,5 +1,6 @@
 package com.example.nativedemo;
 
+import com.baomidou.mybatisplus.annotation.IEnum;
 import com.baomidou.mybatisplus.core.MybatisParameterHandler;
 import com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver;
 import com.baomidou.mybatisplus.core.conditions.AbstractWrapper;
@@ -159,6 +160,8 @@ public class MyBatisNativeConfiguration {
       hints.reflection().registerType(BaseStatementHandler.class,MemberCategory.DECLARED_FIELDS);
       hints.reflection().registerType(MybatisParameterHandler.class,MemberCategory.DECLARED_FIELDS);
 
+
+      hints.reflection().registerType(IEnum.class,MemberCategory.INVOKE_PUBLIC_METHODS);
       // register typeHandler
       hints.reflection().registerType(CompositeEnumTypeHandler.class, MemberCategory.INVOKE_PUBLIC_CONSTRUCTORS);
       hints.reflection().registerType(FastjsonTypeHandler.class, MemberCategory.INVOKE_PUBLIC_CONSTRUCTORS);
