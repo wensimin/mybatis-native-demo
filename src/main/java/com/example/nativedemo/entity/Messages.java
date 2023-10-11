@@ -1,6 +1,8 @@
 package com.example.nativedemo.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.example.nativedemo.enmus.MessageType;
 
@@ -17,6 +19,12 @@ public class Messages implements Serializable {
     private String message;
 
     private MessageType messageType;
+
+    @TableField(fill = FieldFill.INSERT)
+    private String createUser;
+
+    @TableField(fill = FieldFill.UPDATE)
+    private String updateUser;
 
     public Messages() {
     }
