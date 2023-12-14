@@ -316,7 +316,6 @@ public class MyBatisNativeConfiguration {
           ConstructorArgumentValues constructorArgumentValues = new ConstructorArgumentValues();
           constructorArgumentValues.addGenericArgumentValue(mapperInterface);
           beanDefinition.setConstructorArgumentValues(constructorArgumentValues);
-          beanDefinition.setConstructorArgumentValues(constructorArgumentValues);
           beanDefinition.setTargetType(ResolvableType.forClassWithGenerics(beanDefinition.getBeanClass(), mapperInterface));
         }
       }
