@@ -17,13 +17,13 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         LOGGER.info("进入insertFill填充了");
-        setFieldValByName("createUser","聂秋秋",metaObject);
+        setFieldValByName("createUser","user",metaObject);
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
         LOGGER.info("进入updateFill填充了");
-        setFieldValByName("updateUser","聂秋秋",metaObject);
+        setFieldValByName("updateUser","user",metaObject);
     }
 
 }
