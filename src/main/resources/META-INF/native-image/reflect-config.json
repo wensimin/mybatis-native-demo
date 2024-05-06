@@ -57,7 +57,16 @@
   "name":"[Lorg.apache.ibatis.plugin.Interceptor;"
 },
 {
+  "name":"[Lorg.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor$MappingsProvider;"
+},
+{
   "name":"[Lorg.springframework.core.annotation.AnnotationAttributes;"
+},
+{
+  "name":"[Lorg.springframework.jmx.export.metadata.ManagedNotification;"
+},
+{
+  "name":"[Lorg.springframework.jmx.export.metadata.ManagedOperationParameter;"
 },
 {
   "name":"[Lorg.springframework.util.ConcurrentReferenceHashMap$Segment;"
@@ -70,6 +79,9 @@
 },
 {
   "name":"[Z"
+},
+{
+  "name":"android.app.Application"
 },
 {
   "name":"boolean",
@@ -120,10 +132,429 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"ch.qos.logback.core.model.Model"
+},
+{
   "name":"co.elastic.clients.elasticsearch.ElasticsearchClient"
 },
 {
   "name":"co.elastic.clients.transport.ElasticsearchTransport"
+},
+{
+  "name":"com.alibaba.cloud.nacos.NacosConfigAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"nacosConfigManager","parameterTypes":["com.alibaba.cloud.nacos.NacosConfigProperties"] }, {"name":"nacosConfigProperties","parameterTypes":["org.springframework.context.ApplicationContext"] }, {"name":"nacosContextRefresher","parameterTypes":["com.alibaba.cloud.nacos.NacosConfigManager","com.alibaba.cloud.nacos.refresh.NacosRefreshHistory"] }, {"name":"nacosRefreshHistory","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.NacosConfigManager",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.NacosConfigProperties",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"close","parameterTypes":[] }, {"name":"init","parameterTypes":[] }, {"name":"setNamespace","parameterTypes":["java.lang.String"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.NacosConfigProperties$Config",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.configdata.ConfigPreference",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.configdata.NacosConfigDataLoader",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.logging.DeferredLogFactory"] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.configdata.NacosConfigDataLocationResolver",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.logging.DeferredLogFactory"] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.configdata.NacosConfigDataMissingEnvironmentPostProcessor",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.logging.NacosLoggingAppRunListener",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.SpringApplication","java.lang.String[]"] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.parser.NacosJsonPropertySourceLoader",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.parser.NacosXmlPropertySourceLoader",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.refresh.NacosContextRefresher",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"onApplicationEvent","parameterTypes":["org.springframework.context.ApplicationEvent"] }, {"name":"setApplicationContext","parameterTypes":["org.springframework.context.ApplicationContext"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.refresh.NacosRefreshHistory",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.cloud.nacos.refresh.condition.ConditionalOnNonDefaultBehavior",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.alibaba.cloud.nacos.refresh.condition.NonDefaultBehaviorCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.config.remote.request.AbstractConfigRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getDataId","parameterTypes":[] }, {"name":"getGroup","parameterTypes":[] }, {"name":"getModule","parameterTypes":[] }, {"name":"getTenant","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.config.remote.request.ConfigBatchListenRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getConfigListenContexts","parameterTypes":[] }, {"name":"isListen","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.config.remote.request.ConfigBatchListenRequest$ConfigListenContext",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getDataId","parameterTypes":[] }, {"name":"getGroup","parameterTypes":[] }, {"name":"getMd5","parameterTypes":[] }, {"name":"getTenant","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.config.remote.request.ConfigQueryRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getTag","parameterTypes":[] }, {"name":"isNotify","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.config.remote.response.ConfigChangeBatchListenResponse",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setChangedConfigs","parameterTypes":["java.util.List"] }]
+},
+{
+  "name":"com.alibaba.nacos.api.config.remote.response.ConfigChangeBatchListenResponse$ConfigContext",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"com.alibaba.nacos.api.config.remote.response.ConfigQueryResponse",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setBeta","parameterTypes":["boolean"] }, {"name":"setContent","parameterTypes":["java.lang.String"] }, {"name":"setContentType","parameterTypes":["java.lang.String"] }, {"name":"setEncryptedDataKey","parameterTypes":["java.lang.String"] }, {"name":"setLastModified","parameterTypes":["long"] }, {"name":"setMd5","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"com.alibaba.nacos.api.grpc.auto.Metadata",
+  "methods":[{"name":"getClientIp","parameterTypes":[] }, {"name":"getClientIpBytes","parameterTypes":[] }, {"name":"getDefaultInstance","parameterTypes":[] }, {"name":"getType","parameterTypes":[] }, {"name":"getTypeBytes","parameterTypes":[] }, {"name":"newBuilder","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.grpc.auto.Metadata$Builder",
+  "methods":[{"name":"clearClientIp","parameterTypes":[] }, {"name":"clearType","parameterTypes":[] }, {"name":"getClientIp","parameterTypes":[] }, {"name":"getType","parameterTypes":[] }, {"name":"setClientIp","parameterTypes":["java.lang.String"] }, {"name":"setClientIpBytes","parameterTypes":["com.alibaba.nacos.shaded.com.google.protobuf.ByteString"] }, {"name":"setType","parameterTypes":["java.lang.String"] }, {"name":"setTypeBytes","parameterTypes":["com.alibaba.nacos.shaded.com.google.protobuf.ByteString"] }]
+},
+{
+  "name":"com.alibaba.nacos.api.grpc.auto.Payload",
+  "methods":[{"name":"getBody","parameterTypes":[] }, {"name":"getMetadata","parameterTypes":[] }, {"name":"hasBody","parameterTypes":[] }, {"name":"hasMetadata","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.grpc.auto.Payload$Builder",
+  "methods":[{"name":"clearBody","parameterTypes":[] }, {"name":"clearMetadata","parameterTypes":[] }, {"name":"getBody","parameterTypes":[] }, {"name":"getBodyBuilder","parameterTypes":[] }, {"name":"getMetadata","parameterTypes":[] }, {"name":"getMetadataBuilder","parameterTypes":[] }, {"name":"hasBody","parameterTypes":[] }, {"name":"hasMetadata","parameterTypes":[] }, {"name":"setBody","parameterTypes":["com.alibaba.nacos.shaded.com.google.protobuf.Any"] }, {"name":"setMetadata","parameterTypes":["com.alibaba.nacos.api.grpc.auto.Metadata"] }]
+},
+{
+  "name":"com.alibaba.nacos.api.remote.Payload",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.alibaba.nacos.api.remote.request.ConnectionSetupRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"getAbilityTable","parameterTypes":[] }, {"name":"getClientVersion","parameterTypes":[] }, {"name":"getLabels","parameterTypes":[] }, {"name":"getTenant","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.remote.request.HealthCheckRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"com.alibaba.nacos.api.remote.request.InternalRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getModule","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.remote.request.Request",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getHeaders","parameterTypes":[] }, {"name":"getRequestId","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.remote.request.ServerCheckRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"com.alibaba.nacos.api.remote.request.ServerRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.alibaba.nacos.api.remote.request.SetupAckRequest",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setAbilityTable","parameterTypes":["java.util.Map"] }]
+},
+{
+  "name":"com.alibaba.nacos.api.remote.response.HealthCheckResponse",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.api.remote.response.Response",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"setErrorCode","parameterTypes":["int"] }, {"name":"setResultCode","parameterTypes":["int"] }]
+},
+{
+  "name":"com.alibaba.nacos.api.remote.response.ServerCheckResponse",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setConnectionId","parameterTypes":["java.lang.String"] }, {"name":"setSupportAbilityNegotiation","parameterTypes":["boolean"] }]
+},
+{
+  "name":"com.alibaba.nacos.client.config.NacosConfigService",
+  "methods":[{"name":"<init>","parameterTypes":["java.util.Properties"] }]
+},
+{
+  "name":"com.alibaba.nacos.client.logging.logback.NacosLogbackConfiguratorAdapterV1",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.common.notify.DefaultPublisher",
+  "fields":[{"name":"lastEventSequence"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.common.remote.TlsConfig",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getCertChainFile","parameterTypes":[] }, {"name":"getCertPrivateKey","parameterTypes":[] }, {"name":"getCertPrivateKeyPassword","parameterTypes":[] }, {"name":"getCiphers","parameterTypes":[] }, {"name":"getEnableTls","parameterTypes":[] }, {"name":"getMutualAuthEnable","parameterTypes":[] }, {"name":"getProtocols","parameterTypes":[] }, {"name":"getSslProvider","parameterTypes":[] }, {"name":"getTrustAll","parameterTypes":[] }, {"name":"getTrustCollectionCertFile","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.common.remote.client.RpcClientTlsConfig",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
+},
+{
+  "name":"com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture",
+  "fields":[{"name":"listeners"}, {"name":"value"}, {"name":"waiters"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture$Waiter",
+  "fields":[{"name":"next"}, {"name":"thread"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.com.google.protobuf.Any",
+  "methods":[{"name":"getTypeUrl","parameterTypes":[] }, {"name":"getTypeUrlBytes","parameterTypes":[] }, {"name":"getValue","parameterTypes":[] }, {"name":"newBuilder","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.com.google.protobuf.Any$Builder",
+  "methods":[{"name":"clearTypeUrl","parameterTypes":[] }, {"name":"clearValue","parameterTypes":[] }, {"name":"getTypeUrl","parameterTypes":[] }, {"name":"getValue","parameterTypes":[] }, {"name":"setTypeUrl","parameterTypes":["java.lang.String"] }, {"name":"setTypeUrlBytes","parameterTypes":["com.alibaba.nacos.shaded.com.google.protobuf.ByteString"] }, {"name":"setValue","parameterTypes":["com.alibaba.nacos.shaded.com.google.protobuf.ByteString"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.com.google.protobuf.ExtensionRegistry",
+  "methods":[{"name":"getEmptyRegistry","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.census.InternalCensusStatsAccessor"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.census.InternalCensusTracingAccessor"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.internal.DnsNameResolverProvider"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.internal.JndiResourceResolverFactory"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.internal.PickFirstLoadBalancerProvider"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor",
+  "fields":[{"name":"runState"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.NettyChannelProvider"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.UdsNettyChannelProvider"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.grpc.netty.AbstractNettyHandler",
+  "methods":[{"name":"channelActive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"exceptionCaught","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyClientHandler",
+  "methods":[{"name":"channelInactive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"close","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"write","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.grpc.netty.ProtocolNegotiators$GrpcNegotiationHandler",
+  "methods":[{"name":"userEventTriggered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.grpc.netty.ProtocolNegotiators$ProtocolNegotiationHandler",
+  "methods":[{"name":"userEventTriggered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.grpc.netty.ProtocolNegotiators$WaitUntilActiveHandler",
+  "methods":[{"name":"channelActive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.grpc.netty.WriteBufferingAndExceptionHandler",
+  "methods":[{"name":"channelInactive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelRead","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, {"name":"close","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"connect","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","java.net.SocketAddress","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"exceptionCaught","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }, {"name":"flush","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"write","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractByteBufAllocator",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractReferenceCountedByteBuf",
+  "fields":[{"name":"refCnt"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannelHandlerContext",
+  "fields":[{"name":"handlerState"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelDuplexHandler",
+  "methods":[{"name":"bind","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"close","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"connect","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","java.net.SocketAddress","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"deregister","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"disconnect","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"flush","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"read","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"write","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelInboundHandlerAdapter",
+  "methods":[{"name":"channelActive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelInactive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelRead","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, {"name":"channelReadComplete","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelRegistered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelUnregistered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelWritabilityChanged","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"exceptionCaught","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }, {"name":"userEventTriggered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelOutboundBuffer",
+  "fields":[{"name":"totalPendingSize"}, {"name":"unwritable"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.DefaultChannelConfig",
+  "fields":[{"name":"autoRead"}, {"name":"writeBufferWaterMark"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.DefaultChannelPipeline",
+  "fields":[{"name":"estimatorHandle"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.DefaultChannelPipeline$HeadContext",
+  "methods":[{"name":"bind","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"channelActive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelInactive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelRead","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, {"name":"channelReadComplete","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelRegistered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelUnregistered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelWritabilityChanged","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"close","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"connect","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","java.net.SocketAddress","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"deregister","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"disconnect","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"exceptionCaught","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }, {"name":"flush","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"read","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"userEventTriggered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, {"name":"write","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.DefaultChannelPipeline$TailContext",
+  "methods":[{"name":"channelActive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelInactive","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelRead","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, {"name":"channelReadComplete","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelRegistered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelUnregistered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelWritabilityChanged","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"exceptionCaught","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }, {"name":"userEventTriggered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.epoll.Epoll"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.handler.codec.ByteToMessageDecoder",
+  "methods":[{"name":"channelRead","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, {"name":"userEventTriggered","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.lang.Object"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.handler.codec.http2.Http2ConnectionHandler",
+  "methods":[{"name":"bind","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"channelReadComplete","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"channelWritabilityChanged","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"connect","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","java.net.SocketAddress","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"deregister","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"disconnect","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext","com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelPromise"] }, {"name":"flush","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }, {"name":"read","parameterTypes":["com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.ChannelHandlerContext"] }]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.DefaultAttributeMap",
+  "fields":[{"name":"attributes"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.Recycler$DefaultHandle",
+  "fields":[{"name":"state"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.ReferenceCountUtil",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.DefaultPromise",
+  "fields":[{"name":"result"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor",
+  "fields":[{"name":"state"}, {"name":"threadProperties"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields",
+  "fields":[{"name":"producerLimit"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields",
+  "fields":[{"name":"consumerIndex"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields",
+  "fields":[{"name":"producerIndex"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.MpscArrayQueueConsumerIndexField",
+  "fields":[{"name":"consumerIndex"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.MpscArrayQueueProducerIndexField",
+  "fields":[{"name":"producerIndex"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.MpscArrayQueueProducerLimitField",
+  "fields":[{"name":"producerLimit"}]
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.okhttp.OkHttpChannelProvider"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.override.ContextStorageOverride"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.grpc.util.SecretRoundRobinLoadBalancerProvider$Provider"
+},
+{
+  "name":"com.alibaba.nacos.shaded.io.perfmark.impl.SecretPerfMarkImpl$PerfMarkImpl"
 },
 {
   "name":"com.baomidou.mybatisplus.annotation.IEnum",
@@ -500,13 +931,21 @@
   "methods":[{"name":"delete","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"deleteBatchIds","parameterTypes":["java.util.Collection"] }, {"name":"deleteById","parameterTypes":["java.io.Serializable"] }, {"name":"deleteById","parameterTypes":["java.lang.Object"] }, {"name":"deleteByMap","parameterTypes":["java.util.Map"] }, {"name":"deleteJoin","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"exists","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"insert","parameterTypes":["java.lang.Object"] }, {"name":"selectBatchIds","parameterTypes":["java.util.Collection"] }, {"name":"selectBatchIds","parameterTypes":["java.util.Collection","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectById","parameterTypes":["java.io.Serializable"] }, {"name":"selectByMap","parameterTypes":["java.util.Map"] }, {"name":"selectByMap","parameterTypes":["java.util.Map","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectCount","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectJoinCount","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinList","parameterTypes":["java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMap","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMaps","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMapsPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinOne","parameterTypes":["java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMapsPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectObjs","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectObjs","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectOne","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectOne","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","boolean"] }, {"name":"selectPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"update","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"update","parameterTypes":["java.lang.Object","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"updateById","parameterTypes":["java.lang.Object"] }, {"name":"updateJoin","parameterTypes":["java.lang.Object","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"updateJoinAndNull","parameterTypes":["java.lang.Object","com.github.yulichang.interfaces.MPJBaseJoin"] }]
 },
 {
+  "name":"com.fasterxml.jackson.annotation.JacksonAnnotation",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.fasterxml.jackson.annotation.JsonIgnore",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"com.fasterxml.jackson.core.JsonGenerator"
 },
 {
   "name":"com.fasterxml.jackson.core.ObjectCodec",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
-  "methods":[{"name":"getJsonFactory","parameterTypes":[] }, {"name":"readValues","parameterTypes":["com.fasterxml.jackson.core.JsonParser","com.fasterxml.jackson.core.type.TypeReference"] }, {"name":"readValues","parameterTypes":["com.fasterxml.jackson.core.JsonParser","java.lang.Class"] }]
+  "methods":[{"name":"getJsonFactory","parameterTypes":[] }, {"name":"readValues","parameterTypes":["com.fasterxml.jackson.core.JsonParser","com.fasterxml.jackson.core.type.ResolvedType"] }, {"name":"readValues","parameterTypes":["com.fasterxml.jackson.core.JsonParser","com.fasterxml.jackson.core.type.TypeReference"] }, {"name":"readValues","parameterTypes":["com.fasterxml.jackson.core.JsonParser","java.lang.Class"] }]
 },
 {
   "name":"com.fasterxml.jackson.core.TreeCodec",
@@ -885,6 +1324,10 @@
   "name":"io.netty.util.NettyRuntime"
 },
 {
+  "name":"io.prometheus.client.Striped64",
+  "fields":[{"name":"base"}, {"name":"busy"}]
+},
+{
   "name":"io.r2dbc.spi.ConnectionFactory"
 },
 {
@@ -915,7 +1358,8 @@
   "name":"jakarta.annotation.ManagedBean"
 },
 {
-  "name":"jakarta.annotation.PostConstruct"
+  "name":"jakarta.annotation.PostConstruct",
+  "queryAllDeclaredMethods":true
 },
 {
   "name":"jakarta.annotation.PreDestroy"
@@ -1049,7 +1493,8 @@
   "queryAllPublicMethods":true
 },
 {
-  "name":"java.io.Console"
+  "name":"java.io.Console",
+  "methods":[{"name":"charset","parameterTypes":[] }]
 },
 {
   "name":"java.io.FilePermission"
@@ -1081,7 +1526,7 @@
 {
   "name":"java.lang.Class",
   "queryAllDeclaredMethods":true,
-  "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }, {"name":"from","parameterTypes":["java.lang.String"] }, {"name":"isRecord","parameterTypes":[] }, {"name":"of","parameterTypes":["java.lang.String"] }, {"name":"valueOf","parameterTypes":["java.lang.String"] }]
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }, {"name":"accessFlags","parameterTypes":[] }, {"name":"from","parameterTypes":["java.lang.String"] }, {"name":"isRecord","parameterTypes":[] }, {"name":"of","parameterTypes":["java.lang.String"] }, {"name":"valueOf","parameterTypes":["java.lang.String"] }]
 },
 {
   "name":"java.lang.ClassLoader",
@@ -1148,6 +1593,10 @@
   "allDeclaredClasses":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.ProcessHandle",
+  "methods":[{"name":"current","parameterTypes":[] }, {"name":"pid","parameterTypes":[] }]
 },
 {
   "name":"java.lang.RuntimePermission"
@@ -1242,6 +1691,10 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"java.lang.management.ManagementFactory",
+  "methods":[{"name":"getRuntimeMXBean","parameterTypes":[] }]
+},
+{
   "name":"java.lang.management.ManagementPermission",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }]
 },
@@ -1272,7 +1725,8 @@
 },
 {
   "name":"java.lang.management.RuntimeMXBean",
-  "queryAllPublicMethods":true
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"getInputArguments","parameterTypes":[] }]
 },
 {
   "name":"java.lang.management.ThreadInfo",
@@ -1317,6 +1771,10 @@
   "name":"java.math.BigInteger"
 },
 {
+  "name":"java.net.InetSocketAddress",
+  "methods":[{"name":"getHostString","parameterTypes":[] }]
+},
+{
   "name":"java.net.NetPermission"
 },
 {
@@ -1331,12 +1789,32 @@
   "methods":[{"name":"of","parameterTypes":["java.lang.String"] }]
 },
 {
+  "name":"java.nio.Bits",
+  "fields":[{"name":"UNALIGNED"}]
+},
+{
+  "name":"java.nio.Buffer",
+  "fields":[{"name":"address"}]
+},
+{
+  "name":"java.nio.ByteBuffer",
+  "methods":[{"name":"alignedSlice","parameterTypes":["int"] }]
+},
+{
+  "name":"java.nio.DirectByteBuffer",
+  "methods":[{"name":"<init>","parameterTypes":["long","long"] }]
+},
+{
   "name":"java.nio.channels.ServerSocketChannel",
   "methods":[{"name":"open","parameterTypes":["java.net.ProtocolFamily"] }]
 },
 {
   "name":"java.nio.channels.SocketChannel",
   "methods":[{"name":"open","parameterTypes":["java.net.ProtocolFamily"] }]
+},
+{
+  "name":"java.nio.channels.spi.SelectorProvider",
+  "methods":[{"name":"openSocketChannel","parameterTypes":["java.net.ProtocolFamily"] }]
 },
 {
   "name":"java.rmi.MarshalledObject"
@@ -1367,6 +1845,9 @@
   "methods":[{"name":"getMetaData","parameterTypes":[] }, {"name":"prepareStatement","parameterTypes":["java.lang.String"] }, {"name":"prepareStatement","parameterTypes":["java.lang.String","java.lang.String[]"] }]
 },
 {
+  "name":"java.sql.Date"
+},
+{
   "name":"java.sql.Driver"
 },
 {
@@ -1390,6 +1871,9 @@
   "methods":[{"name":"close","parameterTypes":[] }, {"name":"getConnection","parameterTypes":[] }, {"name":"getGeneratedKeys","parameterTypes":[] }, {"name":"getResultSet","parameterTypes":[] }, {"name":"getUpdateCount","parameterTypes":[] }]
 },
 {
+  "name":"java.sql.Timestamp"
+},
+{
   "name":"java.sql.Types",
   "allPublicFields":true
 },
@@ -1397,6 +1881,10 @@
   "name":"java.sql.Wrapper",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
+},
+{
+  "name":"java.time.Duration",
+  "methods":[{"name":"isPositive","parameterTypes":[] }]
 },
 {
   "name":"java.util.ArrayList",
@@ -1441,6 +1929,10 @@
   "name":"java.util.Set"
 },
 {
+  "name":"java.util.SortedSet",
+  "methods":[{"name":"getFirst","parameterTypes":[] }]
+},
+{
   "name":"java.util.concurrent.Callable",
   "methods":[{"name":"call","parameterTypes":[] }]
 },
@@ -1448,6 +1940,14 @@
   "name":"java.util.concurrent.Executor",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
+},
+{
+  "name":"java.util.concurrent.ForkJoinTask",
+  "fields":[{"name":"aux"}, {"name":"status"}]
+},
+{
+  "name":"java.util.concurrent.Future",
+  "methods":[{"name":"state","parameterTypes":[] }]
 },
 {
   "name":"java.util.concurrent.ThreadFactory",
@@ -1461,6 +1961,11 @@
 {
   "name":"java.util.concurrent.atomic.AtomicReference",
   "fields":[{"name":"value"}]
+},
+{
+  "name":"java.util.concurrent.atomic.LongAdder",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"add","parameterTypes":["long"] }, {"name":"sum","parameterTypes":[] }]
 },
 {
   "name":"java.util.concurrent.atomic.Striped64",
@@ -1500,6 +2005,11 @@
   "name":"javax.inject.Named"
 },
 {
+  "name":"javax.management.MBeanInfo",
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"getAttributes","parameterTypes":[] }, {"name":"getConstructors","parameterTypes":[] }, {"name":"getNotifications","parameterTypes":[] }, {"name":"getOperations","parameterTypes":[] }]
+},
+{
   "name":"javax.management.MBeanOperationInfo",
   "queryAllPublicMethods":true,
   "methods":[{"name":"getSignature","parameterTypes":[] }]
@@ -1524,6 +2034,12 @@
 {
   "name":"javax.management.StandardEmitterMBean",
   "methods":[{"name":"cacheMBeanInfo","parameterTypes":["javax.management.MBeanInfo"] }, {"name":"getCachedMBeanInfo","parameterTypes":[] }, {"name":"getMBeanInfo","parameterTypes":[] }]
+},
+{
+  "name":"javax.management.modelmbean.ModelMBeanInfoSupport"
+},
+{
+  "name":"javax.management.modelmbean.ModelMBeanOperationInfo"
 },
 {
   "name":"javax.management.openmbean.CompositeData"
@@ -1568,6 +2084,9 @@
   "name":"javax.naming.ldap.LdapContext"
 },
 {
+  "name":"javax.persistence.EntityManagerFactory"
+},
+{
   "name":"javax.smartcardio.CardPermission"
 },
 {
@@ -1595,6 +2114,10 @@
 {
   "name":"jdk.internal.loader.ClassLoaders$PlatformClassLoader",
   "methods":[{"name":"clearCache","parameterTypes":[] }]
+},
+{
+  "name":"jdk.internal.misc.Unsafe",
+  "methods":[{"name":"getUnsafe","parameterTypes":[] }]
 },
 {
   "name":"jdk.internal.reflect.DirectMethodHandleAccessor"
@@ -1641,6 +2164,9 @@
 },
 {
   "name":"kotlinx.serialization.protobuf.ProtoBuf"
+},
+{
+  "name":"libcore.io.Memory"
 },
 {
   "name":"liquibase.change.DatabaseChange"
@@ -2045,6 +2571,9 @@
   "name":"org.reactivestreams.Publisher"
 },
 {
+  "name":"org.robolectric.Robolectric"
+},
+{
   "name":"org.slf4j.Logger"
 },
 {
@@ -2201,6 +2730,10 @@
   "queryAllDeclaredMethods":true
 },
 {
+  "name":"org.springframework.beans.factory.annotation.Value",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"org.springframework.beans.factory.aot.BeanFactoryInitializationAotProcessor",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
@@ -2229,6 +2762,10 @@
   "name":"org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor",
   "queryAllPublicMethods":true,
   "methods":[{"name":"postProcessAfterInstantiation","parameterTypes":["java.lang.Object","java.lang.String"] }, {"name":"postProcessBeforeInstantiation","parameterTypes":["java.lang.Class","java.lang.String"] }, {"name":"postProcessProperties","parameterTypes":["org.springframework.beans.PropertyValues","java.lang.Object","java.lang.String"] }]
+},
+{
+  "name":"org.springframework.beans.factory.config.Scope",
+  "queryAllPublicMethods":true
 },
 {
   "name":"org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor",
@@ -2278,6 +2815,27 @@
 {
   "name":"org.springframework.boot.SpringBootConfiguration",
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.boot.actuate.autoconfigure.endpoint.EndpointAutoConfiguration"
+},
+{
+  "name":"org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint"
+},
+{
+  "name":"org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointProperties"
+},
+{
+  "name":"org.springframework.boot.actuate.autoconfigure.health.ConditionalOnEnabledHealthIndicator"
+},
+{
+  "name":"org.springframework.boot.actuate.endpoint.annotation.Endpoint"
+},
+{
+  "name":"org.springframework.boot.actuate.health.HealthIndicator"
+},
+{
+  "name":"org.springframework.boot.actuate.health.ReactiveHealthIndicator"
 },
 {
   "name":"org.springframework.boot.admin.SpringApplicationAdminMXBean",
@@ -2869,6 +3427,9 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration"
+},
+{
   "name":"org.springframework.boot.autoconfigure.quartz.SchedulerDependsOnDatabaseInitializationDetector",
   "queryAllDeclaredConstructors":true,
   "queryAllPublicConstructors":true,
@@ -2972,7 +3533,7 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.autoconfigure.task.TaskExecutionProperties","org.springframework.beans.factory.ObjectProvider","org.springframework.beans.factory.ObjectProvider"] }, {"name":"simpleAsyncTaskExecutorBuilder","parameterTypes":[] }]
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.autoconfigure.task.TaskExecutionProperties","org.springframework.beans.factory.ObjectProvider","org.springframework.beans.factory.ObjectProvider"] }, {"name":"simpleAsyncTaskExecutorBuilder","parameterTypes":[] }, {"name":"simpleAsyncTaskExecutorBuilderVirtualThreads","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration",
@@ -2986,7 +3547,7 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"applicationTaskExecutor","parameterTypes":["org.springframework.boot.task.TaskExecutorBuilder","org.springframework.beans.factory.ObjectProvider"] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"applicationTaskExecutor","parameterTypes":["org.springframework.boot.task.TaskExecutorBuilder","org.springframework.beans.factory.ObjectProvider"] }, {"name":"applicationTaskExecutorVirtualThreads","parameterTypes":["org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder"] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration",
@@ -3007,7 +3568,7 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.autoconfigure.task.TaskSchedulingProperties","org.springframework.beans.factory.ObjectProvider"] }, {"name":"simpleAsyncTaskSchedulerBuilder","parameterTypes":[] }]
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.autoconfigure.task.TaskSchedulingProperties","org.springframework.beans.factory.ObjectProvider"] }, {"name":"simpleAsyncTaskSchedulerBuilder","parameterTypes":[] }, {"name":"simpleAsyncTaskSchedulerBuilderVirtualThreads","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration",
@@ -3116,7 +3677,7 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setPort","parameterTypes":["java.lang.Integer"] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.web.WebProperties",
@@ -3181,7 +3742,13 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"tomcatWebServerFactoryCustomizer","parameterTypes":["org.springframework.core.env.Environment","org.springframework.boot.autoconfigure.web.ServerProperties"] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"tomcatVirtualThreadsProtocolHandlerCustomizer","parameterTypes":[] }, {"name":"tomcatWebServerFactoryCustomizer","parameterTypes":["org.springframework.core.env.Environment","org.springframework.boot.autoconfigure.web.ServerProperties"] }]
+},
+{
+  "name":"org.springframework.boot.autoconfigure.web.embedded.TomcatVirtualThreadsWebServerFactoryCustomizer",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"customize","parameterTypes":["org.springframework.boot.web.server.WebServerFactory"] }, {"name":"getOrder","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.web.embedded.TomcatWebServerFactoryCustomizer",
@@ -3486,6 +4053,14 @@
   "methods":[{"name":"<init>","parameterTypes":["org.springframework.boot.logging.DeferredLogFactory","org.springframework.boot.ConfigurableBootstrapContext"] }]
 },
 {
+  "name":"org.springframework.boot.context.config.ConfigDataLocation",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"of","parameterTypes":["java.lang.String"] }, {"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.springframework.boot.context.config.ConfigDataLocationEditor"
+},
+{
   "name":"org.springframework.boot.context.config.ConfigDataNotFoundAction",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
@@ -3493,7 +4068,7 @@
   "name":"org.springframework.boot.context.config.ConfigDataProperties",
   "queryAllDeclaredConstructors":true,
   "fields":[{"name":"this$0"}],
-  "methods":[{"name":"<init>","parameterTypes":[] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"<init>","parameterTypes":["java.util.List","org.springframework.boot.context.config.ConfigDataProperties$Activate"] }]
 },
 {
   "name":"org.springframework.boot.context.config.ConfigTreeConfigDataLoader",
@@ -3546,6 +4121,11 @@
 {
   "name":"org.springframework.boot.context.properties.ConfigurationProperties",
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.boot.context.properties.ConfigurationPropertiesBindHandlerAdvisor",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true
 },
 {
   "name":"org.springframework.boot.context.properties.ConfigurationPropertiesBinder$ConfigurationPropertiesBinderFactory",
@@ -4012,7 +4592,386 @@
   "name":"org.springframework.cglib.proxy.NoOp"
 },
 {
-  "name":"org.springframework.cloud.commons.util.InetUtils"
+  "name":"org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"afterSingletonsInstantiated","parameterTypes":[] }, {"name":"configurationPropertiesBeans","parameterTypes":[] }, {"name":"configurationPropertiesRebinder","parameterTypes":["org.springframework.cloud.context.properties.ConfigurationPropertiesBeans"] }, {"name":"setApplicationContext","parameterTypes":["org.springframework.context.ApplicationContext"] }]
+},
+{
+  "name":"org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"environmentManager","parameterTypes":["org.springframework.core.env.ConfigurableEnvironment"] }]
+},
+{
+  "name":"org.springframework.cloud.autoconfigure.RefreshAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"configDataContextRefresher","parameterTypes":["org.springframework.context.ConfigurableApplicationContext","org.springframework.cloud.context.scope.refresh.RefreshScope","org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$RefreshProperties"] }, {"name":"loggingRebinder","parameterTypes":[] }, {"name":"refreshEventListener","parameterTypes":["org.springframework.cloud.context.refresh.ContextRefresher"] }, {"name":"refreshScope","parameterTypes":[] }, {"name":"refreshScopeLifecycle","parameterTypes":["org.springframework.cloud.context.refresh.ContextRefresher"] }]
+},
+{
+  "name":"org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$RefreshProperties",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$RefreshScopeBeanDefinitionEnhancer",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"postProcessBeanDefinitionRegistry","parameterTypes":["org.springframework.beans.factory.support.BeanDefinitionRegistry"] }, {"name":"postProcessBeanFactory","parameterTypes":["org.springframework.beans.factory.config.ConfigurableListableBeanFactory"] }, {"name":"setEnvironment","parameterTypes":["org.springframework.core.env.Environment"] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.BootstrapApplicationListener",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.BootstrapConfigFileApplicationListener",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.LoggingSystemShutdownListener",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.RefreshBootstrapRegistryInitializer",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.TextEncryptorConfigBootstrapper",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.encrypt.DecryptEnvironmentPostProcessor",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.encrypt.KeyProperties",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.encrypt.KeyProperties$KeyStore",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.bootstrap.marker.Marker"
+},
+{
+  "name":"org.springframework.cloud.client.CommonsClientAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.ConditionalOnBlockingDiscoveryEnabled",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cloud.client.ConditionalOnDiscoveryEnabled",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cloud.client.ConditionalOnDiscoveryHealthIndicatorEnabled",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cloud.client.ConditionalOnReactiveDiscoveryEnabled",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cloud.client.HostInfoEnvironmentPostProcessor",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.ReactiveCommonsClientAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.discovery.DiscoveryClient",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"getOrder","parameterTypes":[] }, {"name":"probe","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"description","parameterTypes":[] }, {"name":"getInstances","parameterTypes":["java.lang.String"] }, {"name":"getServices","parameterTypes":[] }, {"name":"probe","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"compositeDiscoveryClient","parameterTypes":["java.util.List"] }]
+},
+{
+  "name":"org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"description","parameterTypes":[] }, {"name":"getInstances","parameterTypes":["java.lang.String"] }, {"name":"getOrder","parameterTypes":[] }, {"name":"getServices","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"onApplicationEvent","parameterTypes":["org.springframework.context.ApplicationEvent"] }, {"name":"setInet","parameterTypes":["org.springframework.cloud.commons.util.InetUtils"] }, {"name":"setServer","parameterTypes":["org.springframework.boot.autoconfigure.web.ServerProperties"] }, {"name":"simpleDiscoveryClient","parameterTypes":["org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties"] }, {"name":"simpleDiscoveryProperties","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"afterPropertiesSet","parameterTypes":[] }, {"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.loadbalancer.BlockingRestClassesPresentCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$RetryMissingOrDisabledCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.loadbalancer.LoadBalancerClient"
+},
+{
+  "name":"org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"loadBalancerClientsDefaultsMappingsProvider","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$OnAnyLoadBalancerImplementationPresentCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"afterPropertiesSet","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationProperties",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.client.serviceregistry.ServiceRegistryAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"defaultsBindHandlerAdvisor","parameterTypes":["org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor$MappingsProvider[]"] }]
+},
+{
+  "name":"org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"apply","parameterTypes":["org.springframework.boot.context.properties.bind.BindHandler"] }, {"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor$MappingsProvider",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x00007fe86452d768"] }, {"name":"from","parameterTypes":["org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x00007fe86452d768"] }, {"name":"of","parameterTypes":["org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x00007fe86452d768"] }, {"name":"valueOf","parameterTypes":["org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x00007fe86452d768"] }]
+},
+{
+  "name":"org.springframework.cloud.commons.security.ResourceServerTokenRelayAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.commons.security.ResourceServerTokenRelayAutoConfiguration$ResourceServerTokenRelayRegistrationAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"addInterceptors","parameterTypes":["org.springframework.web.servlet.config.annotation.InterceptorRegistry"] }]
+},
+{
+  "name":"org.springframework.cloud.commons.util.InetUtils",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.commons.util.InetUtilsProperties",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.commons.util.UtilAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"inetUtils","parameterTypes":["org.springframework.cloud.commons.util.InetUtilsProperties"] }, {"name":"inetUtilsProperties","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.configuration.CompatibilityVerifier",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.springframework.cloud.configuration.CompatibilityVerifierAutoConfiguration",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"compositeCompatibilityVerifier","parameterTypes":["java.util.List"] }, {"name":"sleuthPresentVerifier","parameterTypes":[] }, {"name":"springBootVersionVerifier","parameterTypes":["org.springframework.cloud.configuration.CompatibilityVerifierProperties"] }]
+},
+{
+  "name":"org.springframework.cloud.configuration.CompatibilityVerifierProperties",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.configuration.CompositeCompatibilityVerifier",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.configuration.SleuthPresentVerifier",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }, {"name":"verify","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.configuration.SpringBootVersionVerifier",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }, {"name":"verify","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.environment.EnvironmentManager",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"setApplicationEventPublisher","parameterTypes":["org.springframework.context.ApplicationEventPublisher"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.properties.ConfigurationPropertiesBeans",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"postProcessAfterInitialization","parameterTypes":["java.lang.Object","java.lang.String"] }, {"name":"postProcessBeforeInitialization","parameterTypes":["java.lang.Object","java.lang.String"] }, {"name":"setApplicationContext","parameterTypes":["org.springframework.context.ApplicationContext"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"onApplicationEvent","parameterTypes":["org.springframework.context.ApplicationEvent"] }, {"name":"setApplicationContext","parameterTypes":["org.springframework.context.ApplicationContext"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.refresh.ConfigDataContextRefresher",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"onApplicationEvent","parameterTypes":["org.springframework.context.ApplicationEvent"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.refresh.ContextRefresher",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"refresh","parameterTypes":[] }, {"name":"refreshEnvironment","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.refresh.RefreshScopeLifecycle",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"isRunning","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }, {"name":"start","parameterTypes":[] }, {"name":"stop","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.restart.RestartListener",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.context.scope.GenericScope",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.springframework.cloud.context.scope.refresh.RefreshScope",
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.springframework.cloud.endpoint.event.RefreshEventListener",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"onApplicationEvent","parameterTypes":["org.springframework.context.ApplicationEvent"] }, {"name":"shutdown","parameterTypes":[] }, {"name":"supportsEventType","parameterTypes":["java.lang.Class"] }]
+},
+{
+  "name":"org.springframework.cloud.logging.LoggingRebinder",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"onApplicationEvent","parameterTypes":["org.springframework.context.ApplicationEvent"] }, {"name":"setEnvironment","parameterTypes":["org.springframework.core.env.Environment"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.sleuth.Tracer"
+},
+{
+  "name":"org.springframework.cloud.util.ConditionalOnBootstrapDisabled",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cloud.util.ConditionalOnBootstrapDisabled$OnBootstrapDisabledCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.util.ConditionalOnBootstrapEnabled",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.cloud.util.ConditionalOnBootstrapEnabled$OnBootstrapEnabledCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.cloud.util.random.CachedRandomPropertySourceEnvironmentPostProcessor",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.context.ApplicationContextAware",
@@ -4020,9 +4979,15 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"org.springframework.context.ApplicationEventPublisherAware",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true
+},
+{
   "name":"org.springframework.context.ApplicationListener",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true,
+  "fields":[{"name":"supportsAsyncExecution"}],
   "methods":[{"name":"supportsAsyncExecution","parameterTypes":[] }]
 },
 {
@@ -4156,7 +5121,7 @@
   "name":"org.springframework.context.event.SmartApplicationListener",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true,
-  "methods":[{"name":"getListenerId","parameterTypes":[] }]
+  "methods":[{"name":"getListenerId","parameterTypes":[] }, {"name":"getOrder","parameterTypes":[] }, {"name":"supportsSourceType","parameterTypes":["java.lang.Class"] }]
 },
 {
   "name":"org.springframework.context.support.ApplicationObjectSupport",
@@ -4231,6 +5196,12 @@
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true,
   "methods":[{"name":"execute","parameterTypes":["java.lang.Runnable","long"] }, {"name":"submitCompletable","parameterTypes":["java.lang.Runnable"] }, {"name":"submitCompletable","parameterTypes":["java.util.concurrent.Callable"] }]
+},
+{
+  "name":"org.springframework.core.task.SimpleAsyncTaskExecutor",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"execute","parameterTypes":["java.lang.Runnable"] }, {"name":"execute","parameterTypes":["java.lang.Runnable","long"] }, {"name":"submit","parameterTypes":["java.lang.Runnable"] }, {"name":"submit","parameterTypes":["java.util.concurrent.Callable"] }, {"name":"submitListenable","parameterTypes":["java.lang.Runnable"] }, {"name":"submitListenable","parameterTypes":["java.util.concurrent.Callable"] }]
 },
 {
   "name":"org.springframework.core.task.TaskExecutor",
@@ -4314,6 +5285,9 @@
 },
 {
   "name":"org.springframework.hateoas.EntityModel"
+},
+{
+  "name":"org.springframework.hateoas.Link"
 },
 {
   "name":"org.springframework.hateoas.server.mvc.TypeConstrainedMappingJackson2HttpMessageConverter"
@@ -4469,6 +5443,50 @@
   "methods":[{"name":"setBeanFactory","parameterTypes":["org.springframework.beans.factory.BeanFactory"] }]
 },
 {
+  "name":"org.springframework.jmx.export.annotation.ManagedAttribute",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.springframework.jmx.export.annotation.ManagedNotifications",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.jmx.export.annotation.ManagedOperation",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true
+},
+{
+  "name":"org.springframework.jmx.export.annotation.ManagedOperationParameters",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.jmx.export.annotation.ManagedResource",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.jmx.export.metadata.AbstractJmxAttribute",
+  "allDeclaredFields":true,
+  "methods":[{"name":"setCurrencyTimeLimit","parameterTypes":["int"] }, {"name":"setDescription","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.springframework.jmx.export.metadata.ManagedAttribute",
+  "allDeclaredFields":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"setPersistPeriod","parameterTypes":["int"] }, {"name":"setPersistPolicy","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.springframework.jmx.export.metadata.ManagedOperation",
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.jmx.export.metadata.ManagedResource",
+  "allDeclaredFields":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"setLog","parameterTypes":["boolean"] }, {"name":"setLogFile","parameterTypes":["java.lang.String"] }, {"name":"setObjectName","parameterTypes":["java.lang.String"] }, {"name":"setPersistLocation","parameterTypes":["java.lang.String"] }, {"name":"setPersistName","parameterTypes":["java.lang.String"] }, {"name":"setPersistPeriod","parameterTypes":["int"] }, {"name":"setPersistPolicy","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"org.springframework.jmx.export.naming.MetadataNamingStrategy",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
@@ -4505,6 +5523,9 @@
 },
 {
   "name":"org.springframework.r2dbc.connection.init.DatabasePopulator"
+},
+{
+  "name":"org.springframework.retry.support.RetryTemplate"
 },
 {
   "name":"org.springframework.scheduling.SchedulingTaskExecutor",
@@ -4552,10 +5573,16 @@
   "name":"org.springframework.security.config.http.SessionCreationPolicy"
 },
 {
+  "name":"org.springframework.security.crypto.encrypt.TextEncryptor"
+},
+{
   "name":"org.springframework.security.oauth2.server.authorization.OAuth2Authorization"
 },
 {
   "name":"org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken"
+},
+{
+  "name":"org.springframework.security.rsa.crypto.RsaSecretEncryptor"
 },
 {
   "name":"org.springframework.security.rsocket.core.SecuritySocketAcceptorInterceptor"
@@ -4710,7 +5737,7 @@
   "name":"org.springframework.util.CustomizableThreadCreator",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
-  "methods":[{"name":"createThread","parameterTypes":["java.lang.Runnable"] }, {"name":"getThreadGroup","parameterTypes":[] }, {"name":"getThreadNamePrefix","parameterTypes":[] }, {"name":"getThreadPriority","parameterTypes":[] }, {"name":"isDaemon","parameterTypes":[] }, {"name":"setDaemon","parameterTypes":["boolean"] }, {"name":"setThreadGroup","parameterTypes":["java.lang.ThreadGroup"] }, {"name":"setThreadGroupName","parameterTypes":["java.lang.String"] }, {"name":"setThreadPriority","parameterTypes":["int"] }]
+  "methods":[{"name":"createThread","parameterTypes":["java.lang.Runnable"] }, {"name":"getThreadGroup","parameterTypes":[] }, {"name":"getThreadNamePrefix","parameterTypes":[] }, {"name":"getThreadPriority","parameterTypes":[] }, {"name":"isDaemon","parameterTypes":[] }, {"name":"setDaemon","parameterTypes":["boolean"] }, {"name":"setThreadGroup","parameterTypes":["java.lang.ThreadGroup"] }, {"name":"setThreadGroupName","parameterTypes":["java.lang.String"] }, {"name":"setThreadNamePrefix","parameterTypes":["java.lang.String"] }, {"name":"setThreadPriority","parameterTypes":["int"] }]
 },
 {
   "name":"org.springframework.util.PathMatcher",
@@ -4956,7 +5983,7 @@
   "name":"org.springframework.web.servlet.config.annotation.WebMvcConfigurer",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true,
-  "methods":[{"name":"addArgumentResolvers","parameterTypes":["java.util.List"] }, {"name":"addCorsMappings","parameterTypes":["org.springframework.web.servlet.config.annotation.CorsRegistry"] }, {"name":"addInterceptors","parameterTypes":["org.springframework.web.servlet.config.annotation.InterceptorRegistry"] }, {"name":"addReturnValueHandlers","parameterTypes":["java.util.List"] }, {"name":"addViewControllers","parameterTypes":["org.springframework.web.servlet.config.annotation.ViewControllerRegistry"] }, {"name":"configureDefaultServletHandling","parameterTypes":["org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer"] }, {"name":"configureHandlerExceptionResolvers","parameterTypes":["java.util.List"] }, {"name":"configureViewResolvers","parameterTypes":["org.springframework.web.servlet.config.annotation.ViewResolverRegistry"] }, {"name":"extendHandlerExceptionResolvers","parameterTypes":["java.util.List"] }, {"name":"extendMessageConverters","parameterTypes":["java.util.List"] }, {"name":"getValidator","parameterTypes":[] }]
+  "methods":[{"name":"addArgumentResolvers","parameterTypes":["java.util.List"] }, {"name":"addCorsMappings","parameterTypes":["org.springframework.web.servlet.config.annotation.CorsRegistry"] }, {"name":"addFormatters","parameterTypes":["org.springframework.format.FormatterRegistry"] }, {"name":"addInterceptors","parameterTypes":["org.springframework.web.servlet.config.annotation.InterceptorRegistry"] }, {"name":"addResourceHandlers","parameterTypes":["org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry"] }, {"name":"addReturnValueHandlers","parameterTypes":["java.util.List"] }, {"name":"addViewControllers","parameterTypes":["org.springframework.web.servlet.config.annotation.ViewControllerRegistry"] }, {"name":"configureAsyncSupport","parameterTypes":["org.springframework.web.servlet.config.annotation.AsyncSupportConfigurer"] }, {"name":"configureContentNegotiation","parameterTypes":["org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer"] }, {"name":"configureDefaultServletHandling","parameterTypes":["org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer"] }, {"name":"configureHandlerExceptionResolvers","parameterTypes":["java.util.List"] }, {"name":"configureMessageConverters","parameterTypes":["java.util.List"] }, {"name":"configurePathMatch","parameterTypes":["org.springframework.web.servlet.config.annotation.PathMatchConfigurer"] }, {"name":"configureViewResolvers","parameterTypes":["org.springframework.web.servlet.config.annotation.ViewResolverRegistry"] }, {"name":"extendHandlerExceptionResolvers","parameterTypes":["java.util.List"] }, {"name":"extendMessageConverters","parameterTypes":["java.util.List"] }, {"name":"getMessageCodesResolver","parameterTypes":[] }, {"name":"getValidator","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.web.servlet.function.support.HandlerFunctionAdapter",
@@ -5181,6 +6208,9 @@
   "name":"org.xnio.SslClientAuthMode"
 },
 {
+  "name":"org.yaml.snakeyaml.Yaml"
+},
+{
   "name":"reactor.core.publisher.Flux"
 },
 {
@@ -5229,8 +6259,15 @@
 },
 {
   "name":"sun.misc.Unsafe",
-  "fields":[{"name":"theUnsafe"}],
-  "methods":[{"name":"objectFieldOffset","parameterTypes":["java.lang.reflect.Field"] }, {"name":"putBoolean","parameterTypes":["java.lang.Object","long","boolean"] }]
+  "allDeclaredFields":true,
+  "methods":[{"name":"arrayBaseOffset","parameterTypes":["java.lang.Class"] }, {"name":"arrayIndexScale","parameterTypes":["java.lang.Class"] }, {"name":"copyMemory","parameterTypes":["long","long","long"] }, {"name":"copyMemory","parameterTypes":["java.lang.Object","long","java.lang.Object","long","long"] }, {"name":"getAndAddLong","parameterTypes":["java.lang.Object","long","long"] }, {"name":"getAndSetObject","parameterTypes":["java.lang.Object","long","java.lang.Object"] }, {"name":"getBoolean","parameterTypes":["java.lang.Object","long"] }, {"name":"getByte","parameterTypes":["long"] }, {"name":"getByte","parameterTypes":["java.lang.Object","long"] }, {"name":"getDouble","parameterTypes":["java.lang.Object","long"] }, {"name":"getFloat","parameterTypes":["java.lang.Object","long"] }, {"name":"getInt","parameterTypes":["long"] }, {"name":"getInt","parameterTypes":["java.lang.Object","long"] }, {"name":"getLong","parameterTypes":["long"] }, {"name":"getLong","parameterTypes":["java.lang.Object","long"] }, {"name":"getObject","parameterTypes":["java.lang.Object","long"] }, {"name":"invokeCleaner","parameterTypes":["java.nio.ByteBuffer"] }, {"name":"objectFieldOffset","parameterTypes":["java.lang.reflect.Field"] }, {"name":"putBoolean","parameterTypes":["java.lang.Object","long","boolean"] }, {"name":"putByte","parameterTypes":["long","byte"] }, {"name":"putByte","parameterTypes":["java.lang.Object","long","byte"] }, {"name":"putDouble","parameterTypes":["java.lang.Object","long","double"] }, {"name":"putFloat","parameterTypes":["java.lang.Object","long","float"] }, {"name":"putInt","parameterTypes":["long","int"] }, {"name":"putInt","parameterTypes":["java.lang.Object","long","int"] }, {"name":"putLong","parameterTypes":["long","long"] }, {"name":"putLong","parameterTypes":["java.lang.Object","long","long"] }, {"name":"putObject","parameterTypes":["java.lang.Object","long","java.lang.Object"] }, {"name":"storeFence","parameterTypes":[] }]
+},
+{
+  "name":"sun.misc.VM"
+},
+{
+  "name":"sun.nio.ch.SelectorImpl",
+  "fields":[{"name":"publicSelectedKeys"}, {"name":"selectedKeys"}]
 },
 {
   "name":"sun.reflect.ReflectionFactory",
@@ -5246,6 +6283,10 @@
 {
   "name":"sun.rmi.transport.DGCImpl_Stub",
   "methods":[{"name":"<init>","parameterTypes":["java.rmi.server.RemoteRef"] }]
+},
+{
+  "name":"sun.security.provider.MD5",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"sun.security.provider.NativePRNG",

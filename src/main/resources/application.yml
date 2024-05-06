@@ -1,0 +1,16 @@
+spring:
+  config:
+    import:
+      - 'nacos:base.yml'
+  cloud:
+    nacos:
+      config:
+        namespace: native
+  threads:
+    virtual:
+      enabled: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8080

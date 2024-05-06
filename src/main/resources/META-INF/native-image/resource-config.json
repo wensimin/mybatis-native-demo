@@ -13,6 +13,28 @@
   }, {
     "pattern":"\\QMETA-INF/services/ch.qos.logback.classic.spi.Configurator\\E"
   }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.api.ability.initializer.AbilityPostProcessor\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.api.config.filter.IConfigFilter\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.api.remote.Payload\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.common.ability.AbstractAbilityControlManager\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.common.labels.LabelsCollector\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.common.log.NacosLogbackConfigurator\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.common.notify.EventPublisher\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.plugin.auth.spi.client.AbstractClientAuthService\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.shaded.io.grpc.LoadBalancerProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.shaded.io.grpc.ManagedChannelProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/com.alibaba.nacos.shaded.io.grpc.NameResolverProvider\\E"
+  }, {
     "pattern":"\\QMETA-INF/services/java.lang.System$LoggerFinder\\E"
   }, {
     "pattern":"\\QMETA-INF/services/java.net.spi.InetAddressResolverProvider\\E"
@@ -49,6 +71,8 @@
   }, {
     "pattern":"\\QMETA-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports\\E"
   }, {
+    "pattern":"\\Qapplication-default.json\\E"
+  }, {
     "pattern":"\\Qapplication-default.properties\\E"
   }, {
     "pattern":"\\Qapplication-default.xml\\E"
@@ -56,6 +80,8 @@
     "pattern":"\\Qapplication-default.yaml\\E"
   }, {
     "pattern":"\\Qapplication-default.yml\\E"
+  }, {
+    "pattern":"\\Qapplication.json\\E"
   }, {
     "pattern":"\\Qapplication.properties\\E"
   }, {
@@ -66,6 +92,12 @@
     "pattern":"\\Qapplication.yml\\E"
   }, {
     "pattern":"\\Qbanner.txt\\E"
+  }, {
+    "pattern":"\\Qcom/alibaba/cloud/nacos/NacosConfigAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qcom/alibaba/cloud/nacos/endpoint/NacosConfigEndpointAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qcom/baomidou/mybatisplus/autoconfigure/IdentifierGeneratorAutoConfiguration.class\\E"
   }, {
     "pattern":"\\Qcom/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration$AutoConfiguredMapperScannerRegistrar.class\\E"
   }, {
@@ -133,6 +165,8 @@
   }, {
     "pattern":"\\Qcom/github/yulichang/toolkit/SpringContentUtils$SpringContext.class\\E"
   }, {
+    "pattern":"\\Qconfig/application-default.json\\E"
+  }, {
     "pattern":"\\Qconfig/application-default.properties\\E"
   }, {
     "pattern":"\\Qconfig/application-default.xml\\E"
@@ -140,6 +174,8 @@
     "pattern":"\\Qconfig/application-default.yaml\\E"
   }, {
     "pattern":"\\Qconfig/application-default.yml\\E"
+  }, {
+    "pattern":"\\Qconfig/application.json\\E"
   }, {
     "pattern":"\\Qconfig/application.properties\\E"
   }, {
@@ -181,6 +217,8 @@
   }, {
     "pattern":"\\Qmessages.properties\\E"
   }, {
+    "pattern":"\\Qnacos-version.txt\\E"
+  }, {
     "pattern":"\\Qorg/apache/catalina/core/RestrictedFilters.properties\\E"
   }, {
     "pattern":"\\Qorg/apache/catalina/core/RestrictedListeners.properties\\E"
@@ -203,7 +241,11 @@
   }, {
     "pattern":"\\Qorg/springframework/beans/factory/InitializingBean.class\\E"
   }, {
+    "pattern":"\\Qorg/springframework/beans/factory/SmartInitializingSingleton.class\\E"
+  }, {
     "pattern":"\\Qorg/springframework/beans/factory/config/BeanFactoryPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/BeanDefinitionRegistryPostProcessor.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/beans/factory/xml/spring-beans.xsd\\E"
   }, {
@@ -513,6 +555,100 @@
   }, {
     "pattern":"\\Qorg/springframework/boot/web/server/mime-mappings.properties\\E"
   }, {
+    "pattern":"\\Qorg/springframework/cloud/autoconfigure/ConfigurationPropertiesRebinderAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/autoconfigure/RefreshAutoConfiguration$JpaInvokerConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/autoconfigure/RefreshAutoConfiguration$RefreshProperties.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/autoconfigure/RefreshAutoConfiguration$RefreshScopeBeanDefinitionEnhancer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/autoconfigure/RefreshAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/CommonsClientAutoConfiguration$ActuatorConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/CommonsClientAutoConfiguration$DiscoveryLoadBalancerConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/CommonsClientAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/ReactiveCommonsClientAutoConfiguration$ReactiveDiscoveryLoadBalancerConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/ReactiveCommonsClientAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/discovery/composite/CompositeDiscoveryClientAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/discovery/composite/reactive/ReactiveCompositeDiscoveryClientAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/discovery/simple/SimpleDiscoveryClientAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/discovery/simple/reactive/SimpleReactiveDiscoveryClientAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/hypermedia/CloudHypermediaAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/BlockingRestClassesPresentCondition$RestClientPresent.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/BlockingRestClassesPresentCondition$RestTemplatePresent.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/BlockingRestClassesPresentCondition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration$RetryAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration$RetryInterceptorAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration$RetryMissingOrDisabledCondition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/LoadBalancerDefaultMappingsProviderAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/reactive/LoadBalancerBeanPostProcessorAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/loadbalancer/reactive/ReactorLoadBalancerClientAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/serviceregistry/AutoServiceRegistrationAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/serviceregistry/AutoServiceRegistrationConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/serviceregistry/ServiceRegistryAutoConfiguration$ServiceRegistryEndpointConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/client/serviceregistry/ServiceRegistryAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/commons/config/CommonsConfigAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/commons/security/ResourceServerTokenRelayAutoConfiguration$ConditionalOnOAuth2ClientInResourceServer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/commons/security/ResourceServerTokenRelayAutoConfiguration$OAuth2OnClientInResourceServerCondition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/commons/security/ResourceServerTokenRelayAutoConfiguration$ResourceServerTokenRelayRegistrationAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/commons/security/ResourceServerTokenRelayAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/commons/util/UtilAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/configuration/CompatibilityVerifierAutoConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapDisabled$OnBootstrapDisabledCondition$OnBootstrapEnabled.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapDisabled$OnBootstrapDisabledCondition$OnBootstrapMarkerClassPresent.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapDisabled$OnBootstrapDisabledCondition$OnUseLegacyProcessingEnabled.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapDisabled$OnBootstrapDisabledCondition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapEnabled$OnBootstrapEnabledCondition$OnBootstrapEnabled.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapEnabled$OnBootstrapEnabledCondition$OnBootstrapMarkerClassPresent.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapEnabled$OnBootstrapEnabledCondition$OnUseLegacyProcessingEnabled.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cloud/util/ConditionalOnBootstrapEnabled$OnBootstrapEnabledCondition.class\\E"
+  }, {
     "pattern":"\\Qorg/springframework/context/ApplicationContextAware.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/context/ApplicationListener.class\\E"
@@ -584,6 +720,8 @@
     "pattern":"\\Qschema-all.sql\\E"
   }, {
     "pattern":"\\Qschema.sql\\E"
+  }, {
+    "pattern":"\\Qspas.properties\\E"
   }, {
     "pattern":"\\Qspring.properties\\E"
   }, {
@@ -690,7 +828,7 @@
     "locales":["", "und"]
   }, {
     "name":"org.apache.tomcat.util.threads.LocalStrings",
-    "locales":["", "und"]
+    "locales":["und"]
   }, {
     "name":"org.apache.tomcat.websocket.LocalStrings",
     "locales":["", "und"]
