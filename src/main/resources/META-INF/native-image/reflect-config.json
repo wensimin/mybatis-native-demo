@@ -467,6 +467,13 @@
   "methods":[{"name":"getValue","parameterTypes":[] }]
 },
 {
+  "name":"com.example.nativedemo.entity.MessageDto",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getCreateUser","parameterTypes":[] }, {"name":"getId","parameterTypes":[] }, {"name":"getMessage","parameterTypes":[] }, {"name":"getMessageType","parameterTypes":[] }, {"name":"getUpdateUser","parameterTypes":[] }, {"name":"getUserId","parameterTypes":[] }, {"name":"getUserName","parameterTypes":[] }, {"name":"setCreateUser","parameterTypes":["java.lang.String"] }, {"name":"setId","parameterTypes":["java.lang.Long"] }, {"name":"setMessage","parameterTypes":["java.lang.String"] }, {"name":"setMessageType","parameterTypes":["com.example.nativedemo.enmus.MessageType"] }, {"name":"setUserId","parameterTypes":["java.lang.Long"] }, {"name":"setUserName","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"com.example.nativedemo.entity.Messages",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
