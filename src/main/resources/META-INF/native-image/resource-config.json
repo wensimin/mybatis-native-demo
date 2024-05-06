@@ -3,7 +3,11 @@
   "includes":[{
     "pattern":"\\Q/com/example/nativedemo/mapper/MessagesMapper.xml\\E"
   }, {
+    "pattern":"\\Q/com/example/nativedemo/mapper/SysUserMapper.xml\\E"
+  }, {
     "pattern":"\\QMETA-INF/build-info.properties\\E"
+  }, {
+    "pattern":"\\QMETA-INF/resources/favicon.ico\\E"
   }, {
     "pattern":"\\QMETA-INF/resources/index.html\\E"
   }, {
@@ -40,6 +44,8 @@
     "pattern":"\\QMETA-INF/spring.factories\\E"
   }, {
     "pattern":"\\QMETA-INF/spring.integration.properties\\E"
+  }, {
+    "pattern":"\\QMETA-INF/spring.schemas\\E"
   }, {
     "pattern":"\\QMETA-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports\\E"
   }, {
@@ -103,11 +109,17 @@
   }, {
     "pattern":"\\Qcom/example/nativedemo/\\E"
   }, {
+    "pattern":"\\Qcom/example/nativedemo/controller/DemoController.class\\E"
+  }, {
     "pattern":"\\Qcom/example/nativedemo/dao/MessagesDao.class\\E"
+  }, {
+    "pattern":"\\Qcom/example/nativedemo/dao/SysUserDao.class\\E"
   }, {
     "pattern":"\\Qcom/example/nativedemo/entity/\\E"
   }, {
     "pattern":"\\Qcom/example/nativedemo/mapper/MessagesMapper.xml\\E"
+  }, {
+    "pattern":"\\Qcom/example/nativedemo/mapper/SysUserMapper.xml\\E"
   }, {
     "pattern":"\\Qcom/github/yulichang/autoconfigure/MybatisPlusJoinAutoConfiguration$MPJMappingConfig.class\\E"
   }, {
@@ -183,6 +195,8 @@
   }, {
     "pattern":"\\Qorg/h2/util/data.zip\\E"
   }, {
+    "pattern":"\\Qorg/springframework/aot/hint/annotation/Reflective.class\\E"
+  }, {
     "pattern":"\\Qorg/springframework/beans/factory/Aware.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/beans/factory/BeanFactoryAware.class\\E"
@@ -190,6 +204,8 @@
     "pattern":"\\Qorg/springframework/beans/factory/InitializingBean.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/beans/factory/config/BeanFactoryPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/spring-beans.xsd\\E"
   }, {
     "pattern":"\\Qorg/springframework/boot/autoconfigure/AbstractDependsOnBeanFactoryPostProcessor.class\\E"
   }, {
@@ -495,6 +511,8 @@
   }, {
     "pattern":"\\Qorg/springframework/boot/sql/init/dependency/DatabaseInitializationDependencyConfigurer.class\\E"
   }, {
+    "pattern":"\\Qorg/springframework/boot/web/server/mime-mappings.properties\\E"
+  }, {
     "pattern":"\\Qorg/springframework/context/ApplicationContextAware.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/context/ApplicationListener.class\\E"
@@ -527,6 +545,8 @@
   }, {
     "pattern":"\\Qorg/springframework/core/annotation/Order.class\\E"
   }, {
+    "pattern":"\\Qorg/springframework/jdbc/support/sql-error-codes.xml\\E"
+  }, {
     "pattern":"\\Qorg/springframework/transaction/annotation/AbstractTransactionManagementConfiguration.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/transaction/annotation/EnableTransactionManagement.class\\E"
@@ -534,6 +554,14 @@
     "pattern":"\\Qorg/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/transaction/annotation/TransactionManagementConfigurationSelector.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/web/bind/annotation/Mapping.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/web/bind/annotation/RequestMapping.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/web/bind/annotation/ResponseBody.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/web/bind/annotation/RestController.class\\E"
   }, {
     "pattern":"\\Qorg/springframework/web/context/ServletContextAware.class\\E"
   }, {
@@ -545,7 +573,11 @@
   }, {
     "pattern":"\\Qorg/springframework/web/servlet/config/annotation/WebMvcConfigurer.class\\E"
   }, {
+    "pattern":"\\Qpublic/favicon.ico\\E"
+  }, {
     "pattern":"\\Qpublic/index.html\\E"
+  }, {
+    "pattern":"\\Qresources/favicon.ico\\E"
   }, {
     "pattern":"\\Qresources/index.html\\E"
   }, {
@@ -555,16 +587,29 @@
   }, {
     "pattern":"\\Qspring.properties\\E"
   }, {
+    "pattern":"\\Qsql-error-codes.xml\\E"
+  }, {
+    "pattern":"\\Qstatic/favicon.ico\\E"
+  }, {
     "pattern":"\\Qstatic/index.html\\E"
   }, {
     "pattern":"jdk.jfr:\\Qjdk/jfr/internal/query/view.ini\\E"
   }]},
   "bundles":[{
+    "name":"com.sun.org.apache.xerces.internal.impl.xpath.regex.message",
+    "locales":[""]
+  }, {
+    "name":"jakarta.servlet.LocalStrings",
+    "locales":[""]
+  }, {
     "name":"jakarta.servlet.http.LocalStrings",
     "locales":["", "und"]
   }, {
     "name":"org.apache.catalina.authenticator.LocalStrings",
     "locales":["", "und"]
+  }, {
+    "name":"org.apache.catalina.authenticator.jaspic.LocalStrings",
+    "locales":[""]
   }, {
     "name":"org.apache.catalina.connector.LocalStrings",
     "locales":["", "und"]
@@ -611,6 +656,9 @@
     "name":"org.apache.coyote.http11.LocalStrings",
     "locales":["", "und"]
   }, {
+    "name":"org.apache.coyote.http11.filters.LocalStrings",
+    "locales":[""]
+  }, {
     "name":"org.apache.naming.LocalStrings",
     "locales":["", "und"]
   }, {
@@ -628,6 +676,9 @@
   }, {
     "name":"org.apache.tomcat.util.http.LocalStrings",
     "locales":["", "und"]
+  }, {
+    "name":"org.apache.tomcat.util.http.parser.LocalStrings",
+    "locales":[""]
   }, {
     "name":"org.apache.tomcat.util.modeler.LocalStrings",
     "locales":["", "und"]

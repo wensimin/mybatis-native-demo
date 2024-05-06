@@ -127,6 +127,7 @@
 },
 {
   "name":"com.baomidou.mybatisplus.annotation.IEnum",
+  "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
 },
 {
@@ -305,9 +306,22 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"com.baomidou.mybatisplus.core.metadata.IPage",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"com.baomidou.mybatisplus.core.metadata.TableInfo",
   "allDeclaredFields":true,
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }, {"name":"<init>","parameterTypes":["org.apache.ibatis.session.Configuration","java.lang.Class"] }]
+},
+{
+  "name":"com.baomidou.mybatisplus.core.override.MybatisMapperMethod"
+},
+{
+  "name":"com.baomidou.mybatisplus.core.override.MybatisMapperProxy"
+},
+{
+  "name":"com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker"
 },
 {
   "name":"com.baomidou.mybatisplus.core.toolkit.Wrappers$EmptyWrapper",
@@ -321,6 +335,13 @@
 },
 {
   "name":"com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor"
+},
+{
+  "name":"com.baomidou.mybatisplus.extension.plugins.pagination.Page",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"getCurrent","parameterTypes":[] }, {"name":"getPages","parameterTypes":[] }, {"name":"getRecords","parameterTypes":[] }, {"name":"getSize","parameterTypes":[] }, {"name":"getTotal","parameterTypes":[] }]
 },
 {
   "name":"com.baomidou.mybatisplus.extension.service.IService",
@@ -403,6 +424,18 @@
   "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"runWithMybatisPlus","parameterTypes":["com.example.nativedemo.mapper.MessagesMapper","com.example.nativedemo.dao.MessagesDao"] }]
 },
 {
+  "name":"com.example.nativedemo.controller.DemoController",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["com.example.nativedemo.dao.MessagesDao","com.example.nativedemo.dao.SysUserDao"] }, {"name":"add","parameterTypes":[] }, {"name":"listAll","parameterTypes":[] }]
+},
+{
+  "name":"com.example.nativedemo.controller.DemoController$$SpringCGLIB$$0",
+  "fields":[{"name":"CGLIB$CALLBACK_FILTER"}, {"name":"CGLIB$FACTORY_DATA"}],
+  "methods":[{"name":"CGLIB$SET_THREAD_CALLBACKS","parameterTypes":["org.springframework.cglib.proxy.Callback[]"] }]
+},
+{
   "name":"com.example.nativedemo.dao.MessagesDao",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
@@ -411,6 +444,18 @@
 },
 {
   "name":"com.example.nativedemo.dao.MessagesDao$$SpringCGLIB$$0",
+  "fields":[{"name":"CGLIB$CALLBACK_FILTER"}, {"name":"CGLIB$FACTORY_DATA"}],
+  "methods":[{"name":"CGLIB$SET_THREAD_CALLBACKS","parameterTypes":["org.springframework.cglib.proxy.Callback[]"] }]
+},
+{
+  "name":"com.example.nativedemo.dao.SysUserDao",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.example.nativedemo.dao.SysUserDao$$SpringCGLIB$$0",
   "fields":[{"name":"CGLIB$CALLBACK_FILTER"}, {"name":"CGLIB$FACTORY_DATA"}],
   "methods":[{"name":"CGLIB$SET_THREAD_CALLBACKS","parameterTypes":["org.springframework.cglib.proxy.Callback[]"] }]
 },
@@ -426,13 +471,23 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getCreateUser","parameterTypes":[] }, {"name":"getId","parameterTypes":[] }, {"name":"getMessage","parameterTypes":[] }, {"name":"getMessageType","parameterTypes":[] }, {"name":"getUpdateUser","parameterTypes":[] }, {"name":"getUserId","parameterTypes":[] }, {"name":"setCreateUser","parameterTypes":["java.lang.String"] }, {"name":"setId","parameterTypes":["java.lang.Long"] }, {"name":"setMessage","parameterTypes":["java.lang.String"] }, {"name":"setMessageType","parameterTypes":["com.example.nativedemo.enmus.MessageType"] }, {"name":"setUpdateUser","parameterTypes":["java.lang.String"] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getCreateUser","parameterTypes":[] }, {"name":"getId","parameterTypes":[] }, {"name":"getMessage","parameterTypes":[] }, {"name":"getMessageType","parameterTypes":[] }, {"name":"getUpdateUser","parameterTypes":[] }, {"name":"getUserId","parameterTypes":[] }, {"name":"setCreateUser","parameterTypes":["java.lang.String"] }, {"name":"setId","parameterTypes":["java.lang.Long"] }, {"name":"setMessage","parameterTypes":["java.lang.String"] }, {"name":"setMessageType","parameterTypes":["com.example.nativedemo.enmus.MessageType"] }, {"name":"setUpdateUser","parameterTypes":["java.lang.String"] }, {"name":"setUserId","parameterTypes":["java.lang.Long"] }]
 },
 {
-  "name":"com.example.nativedemo.entity.SysUser"
+  "name":"com.example.nativedemo.entity.SysUser",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"getId","parameterTypes":[] }, {"name":"getUsername","parameterTypes":[] }, {"name":"setId","parameterTypes":["java.lang.Long"] }]
 },
 {
   "name":"com.example.nativedemo.mapper.MessagesMapper",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"delete","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"deleteBatchIds","parameterTypes":["java.util.Collection"] }, {"name":"deleteById","parameterTypes":["java.io.Serializable"] }, {"name":"deleteById","parameterTypes":["java.lang.Object"] }, {"name":"deleteByMap","parameterTypes":["java.util.Map"] }, {"name":"deleteJoin","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"exists","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"insert","parameterTypes":["java.lang.Object"] }, {"name":"selectBatchIds","parameterTypes":["java.util.Collection"] }, {"name":"selectBatchIds","parameterTypes":["java.util.Collection","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectById","parameterTypes":["java.io.Serializable"] }, {"name":"selectByMap","parameterTypes":["java.util.Map"] }, {"name":"selectByMap","parameterTypes":["java.util.Map","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectCount","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectJoinCount","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinList","parameterTypes":["java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMap","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMaps","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMapsPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinOne","parameterTypes":["java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMapsPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectObjs","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectObjs","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectOne","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectOne","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","boolean"] }, {"name":"selectPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"update","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"update","parameterTypes":["java.lang.Object","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"updateById","parameterTypes":["java.lang.Object"] }, {"name":"updateJoin","parameterTypes":["java.lang.Object","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"updateJoinAndNull","parameterTypes":["java.lang.Object","com.github.yulichang.interfaces.MPJBaseJoin"] }]
+},
+{
+  "name":"com.example.nativedemo.mapper.SysUserMapper",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true,
   "methods":[{"name":"delete","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"deleteBatchIds","parameterTypes":["java.util.Collection"] }, {"name":"deleteById","parameterTypes":["java.io.Serializable"] }, {"name":"deleteById","parameterTypes":["java.lang.Object"] }, {"name":"deleteByMap","parameterTypes":["java.util.Map"] }, {"name":"deleteJoin","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"exists","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"insert","parameterTypes":["java.lang.Object"] }, {"name":"selectBatchIds","parameterTypes":["java.util.Collection"] }, {"name":"selectBatchIds","parameterTypes":["java.util.Collection","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectById","parameterTypes":["java.io.Serializable"] }, {"name":"selectByMap","parameterTypes":["java.util.Map"] }, {"name":"selectByMap","parameterTypes":["java.util.Map","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectCount","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectJoinCount","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinList","parameterTypes":["java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMap","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMaps","parameterTypes":["com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinMapsPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinOne","parameterTypes":["java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectJoinPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","java.lang.Class","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectList","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectMaps","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectMapsPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectObjs","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectObjs","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectOne","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"selectOne","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper","boolean"] }, {"name":"selectPage","parameterTypes":["com.baomidou.mybatisplus.core.metadata.IPage","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"update","parameterTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"update","parameterTypes":["java.lang.Object","com.baomidou.mybatisplus.core.conditions.Wrapper"] }, {"name":"updateById","parameterTypes":["java.lang.Object"] }, {"name":"updateJoin","parameterTypes":["java.lang.Object","com.github.yulichang.interfaces.MPJBaseJoin"] }, {"name":"updateJoinAndNull","parameterTypes":["java.lang.Object","com.github.yulichang.interfaces.MPJBaseJoin"] }]
@@ -587,12 +642,84 @@
   "methods":[{"name":"close","parameterTypes":[] }, {"name":"intercept","parameterTypes":["org.apache.ibatis.plugin.Invocation"] }, {"name":"plugin","parameterTypes":["java.lang.Object"] }, {"name":"setProperties","parameterTypes":["java.util.Properties"] }, {"name":"shutdown","parameterTypes":[] }, {"name":"toInterceptor","parameterTypes":[] }]
 },
 {
-  "name":"com.github.yulichang.interfaces.MPJBaseJoin"
+  "name":"com.github.yulichang.interfaces.MPJBaseJoin",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.query.interfaces.StringJoin",
+  "queryAllDeclaredMethods":true
 },
 {
   "name":"com.github.yulichang.toolkit.SpringContentUtils$SpringContext",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.JoinAbstractLambdaWrapper",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getAlias","parameterTypes":[] }, {"name":"getFrom","parameterTypes":[] }, {"name":"getSubLogicSql","parameterTypes":[] }]
+},
+{
+  "name":"com.github.yulichang.wrapper.JoinAbstractWrapper",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getEntity","parameterTypes":[] }, {"name":"getSqlComment","parameterTypes":[] }, {"name":"getSqlFirst","parameterTypes":[] }, {"name":"getSqlSegment","parameterTypes":[] }]
+},
+{
+  "name":"com.github.yulichang.wrapper.MPJLambdaWrapper",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getSelectDistinct","parameterTypes":[] }, {"name":"getSqlSelect","parameterTypes":[] }, {"name":"getUnionSql","parameterTypes":[] }]
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.Chain",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.Compare",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.CompareIfExists",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.CompareStr",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.CompareStrIfExists",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.Func",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.FuncStr",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.Join",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.OnCompare",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.Query",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.QueryJoin",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.QueryLabel",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.github.yulichang.wrapper.interfaces.SelectWrapper",
+  "queryAllDeclaredMethods":true
 },
 {
   "name":"com.google.gson.Gson"
@@ -683,6 +810,14 @@
   "queryAllPublicConstructors":true
 },
 {
+  "name":"com.sun.org.apache.xerces.internal.impl.dv.xs.ExtendedSchemaDVFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDVFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
@@ -706,6 +841,9 @@
   "queryAllDeclaredMethods":true,
   "queryAllPublicConstructors":true,
   "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"close","parameterTypes":[] }, {"name":"getConnection","parameterTypes":[] }, {"name":"getConnection","parameterTypes":["java.lang.String","java.lang.String"] }, {"name":"getLogWriter","parameterTypes":[] }, {"name":"getLoginTimeout","parameterTypes":[] }, {"name":"getParentLogger","parameterTypes":[] }, {"name":"isWrapperFor","parameterTypes":["java.lang.Class"] }, {"name":"setHealthCheckRegistry","parameterTypes":["java.lang.Object"] }, {"name":"setLogWriter","parameterTypes":["java.io.PrintWriter"] }, {"name":"setLoginTimeout","parameterTypes":["int"] }, {"name":"setMetricRegistry","parameterTypes":["java.lang.Object"] }, {"name":"setMetricsTrackerFactory","parameterTypes":["com.zaxxer.hikari.metrics.MetricsTrackerFactory"] }, {"name":"unwrap","parameterTypes":["java.lang.Class"] }]
+},
+{
+  "name":"com.zaxxer.hikari.pool.HikariProxyResultSet"
 },
 {
   "name":"com.zaxxer.hikari.pool.PoolBase",
@@ -943,7 +1081,12 @@
   "methods":[{"name":"defineClass","parameterTypes":["java.lang.String","byte[]","int","int","java.security.ProtectionDomain"] }]
 },
 {
+  "name":"java.lang.Cloneable",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"java.lang.Comparable",
+  "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
 },
 {
@@ -988,6 +1131,9 @@
   "name":"java.lang.Number",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"java.lang.NumberFormatException"
 },
 {
   "name":"java.lang.Object",
@@ -1139,6 +1285,9 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"java.lang.reflect.Method"
+},
+{
   "name":"java.lang.reflect.ParameterizedType",
   "methods":[{"name":"getActualTypeArguments","parameterTypes":[] }, {"name":"getRawType","parameterTypes":[] }]
 },
@@ -1234,6 +1383,10 @@
   "methods":[{"name":"close","parameterTypes":[] }, {"name":"getConnection","parameterTypes":[] }, {"name":"getGeneratedKeys","parameterTypes":[] }, {"name":"getResultSet","parameterTypes":[] }, {"name":"getUpdateCount","parameterTypes":[] }]
 },
 {
+  "name":"java.sql.Types",
+  "allPublicFields":true
+},
+{
   "name":"java.sql.Wrapper",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
@@ -1243,7 +1396,10 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"java.util.Date"
+  "name":"java.util.Date",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true
 },
 {
   "name":"java.util.Enumeration"
@@ -1276,6 +1432,10 @@
 },
 {
   "name":"java.util.Set"
+},
+{
+  "name":"java.util.concurrent.Callable",
+  "methods":[{"name":"call","parameterTypes":[] }]
 },
 {
   "name":"java.util.concurrent.Executor",
@@ -1430,6 +1590,9 @@
   "methods":[{"name":"clearCache","parameterTypes":[] }]
 },
 {
+  "name":"jdk.internal.reflect.DirectMethodHandleAccessor"
+},
+{
   "name":"jdk.management.jfr.ConfigurationInfo",
   "queryAllPublicMethods":true
 },
@@ -1489,9 +1652,30 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"org.apache.catalina.authenticator.AuthenticatorBase"
+},
+{
+  "name":"org.apache.catalina.connector.CoyoteAdapter"
+},
+{
   "name":"org.apache.catalina.core.ApplicationContextFacade",
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"addFilter","parameterTypes":["java.lang.String","jakarta.servlet.Filter"] }, {"name":"addFilter","parameterTypes":["java.lang.String","java.lang.Class"] }, {"name":"addFilter","parameterTypes":["java.lang.String","java.lang.String"] }, {"name":"addJspFile","parameterTypes":["java.lang.String","java.lang.String"] }, {"name":"addListener","parameterTypes":["java.lang.Class"] }, {"name":"addListener","parameterTypes":["java.lang.String"] }, {"name":"addListener","parameterTypes":["java.util.EventListener"] }, {"name":"addServlet","parameterTypes":["java.lang.String","jakarta.servlet.Servlet"] }, {"name":"addServlet","parameterTypes":["java.lang.String","java.lang.Class"] }, {"name":"addServlet","parameterTypes":["java.lang.String","java.lang.String"] }, {"name":"createFilter","parameterTypes":["java.lang.Class"] }, {"name":"createListener","parameterTypes":["java.lang.Class"] }, {"name":"createServlet","parameterTypes":["java.lang.Class"] }, {"name":"declareRoles","parameterTypes":["java.lang.String[]"] }, {"name":"getAttribute","parameterTypes":["java.lang.String"] }, {"name":"getAttributeNames","parameterTypes":[] }, {"name":"getClassLoader","parameterTypes":[] }, {"name":"getContext","parameterTypes":["java.lang.String"] }, {"name":"getContextPath","parameterTypes":[] }, {"name":"getDefaultSessionTrackingModes","parameterTypes":[] }, {"name":"getEffectiveMajorVersion","parameterTypes":[] }, {"name":"getEffectiveMinorVersion","parameterTypes":[] }, {"name":"getEffectiveSessionTrackingModes","parameterTypes":[] }, {"name":"getFilterRegistration","parameterTypes":["java.lang.String"] }, {"name":"getFilterRegistrations","parameterTypes":[] }, {"name":"getInitParameter","parameterTypes":["java.lang.String"] }, {"name":"getInitParameterNames","parameterTypes":[] }, {"name":"getJspConfigDescriptor","parameterTypes":[] }, {"name":"getMajorVersion","parameterTypes":[] }, {"name":"getMimeType","parameterTypes":["java.lang.String"] }, {"name":"getMinorVersion","parameterTypes":[] }, {"name":"getNamedDispatcher","parameterTypes":["java.lang.String"] }, {"name":"getRealPath","parameterTypes":["java.lang.String"] }, {"name":"getRequestCharacterEncoding","parameterTypes":[] }, {"name":"getRequestDispatcher","parameterTypes":["java.lang.String"] }, {"name":"getResource","parameterTypes":["java.lang.String"] }, {"name":"getResourceAsStream","parameterTypes":["java.lang.String"] }, {"name":"getResourcePaths","parameterTypes":["java.lang.String"] }, {"name":"getResponseCharacterEncoding","parameterTypes":[] }, {"name":"getServerInfo","parameterTypes":[] }, {"name":"getServletContextName","parameterTypes":[] }, {"name":"getServletRegistration","parameterTypes":["java.lang.String"] }, {"name":"getServletRegistrations","parameterTypes":[] }, {"name":"getSessionCookieConfig","parameterTypes":[] }, {"name":"getSessionTimeout","parameterTypes":[] }, {"name":"getVirtualServerName","parameterTypes":[] }, {"name":"log","parameterTypes":["java.lang.String"] }, {"name":"log","parameterTypes":["java.lang.String","java.lang.Throwable"] }, {"name":"removeAttribute","parameterTypes":["java.lang.String"] }, {"name":"setAttribute","parameterTypes":["java.lang.String","java.lang.Object"] }, {"name":"setInitParameter","parameterTypes":["java.lang.String","java.lang.String"] }, {"name":"setRequestCharacterEncoding","parameterTypes":["java.lang.String"] }, {"name":"setResponseCharacterEncoding","parameterTypes":["java.lang.String"] }, {"name":"setSessionTimeout","parameterTypes":["int"] }, {"name":"setSessionTrackingModes","parameterTypes":["java.util.Set"] }]
+},
+{
+  "name":"org.apache.catalina.core.ApplicationFilterChain"
+},
+{
+  "name":"org.apache.catalina.core.StandardContextValve"
+},
+{
+  "name":"org.apache.catalina.core.StandardEngineValve"
+},
+{
+  "name":"org.apache.catalina.core.StandardHostValve"
+},
+{
+  "name":"org.apache.catalina.core.StandardWrapperValve"
 },
 {
   "name":"org.apache.catalina.loader.JdbcLeakPrevention",
@@ -1505,11 +1689,20 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"org.apache.catalina.valves.ErrorReportValve"
+},
+{
   "name":"org.apache.commons.dbcp2.BasicDataSource"
+},
+{
+  "name":"org.apache.coyote.AbstractProcessorLight"
 },
 {
   "name":"org.apache.coyote.AbstractProtocol",
   "methods":[{"name":"getAddress","parameterTypes":[] }, {"name":"getLocalPort","parameterTypes":[] }, {"name":"setPort","parameterTypes":["int"] }, {"name":"setProperty","parameterTypes":["java.lang.String","java.lang.String"] }]
+},
+{
+  "name":"org.apache.coyote.AbstractProtocol$ConnectionHandler"
 },
 {
   "name":"org.apache.coyote.UpgradeProtocol"
@@ -1523,12 +1716,33 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"org.apache.coyote.http11.Http11Processor"
+},
+{
   "name":"org.apache.ibatis.annotations.Mapper",
   "queryAllDeclaredMethods":true
 },
 {
+  "name":"org.apache.ibatis.executor.BaseExecutor"
+},
+{
+  "name":"org.apache.ibatis.executor.CachingExecutor"
+},
+{
   "name":"org.apache.ibatis.executor.Executor",
   "methods":[{"name":"close","parameterTypes":["boolean"] }, {"name":"commit","parameterTypes":["boolean"] }, {"name":"query","parameterTypes":["org.apache.ibatis.mapping.MappedStatement","java.lang.Object","org.apache.ibatis.session.RowBounds","org.apache.ibatis.session.ResultHandler"] }, {"name":"query","parameterTypes":["org.apache.ibatis.mapping.MappedStatement","java.lang.Object","org.apache.ibatis.session.RowBounds","org.apache.ibatis.session.ResultHandler","org.apache.ibatis.cache.CacheKey","org.apache.ibatis.mapping.BoundSql"] }, {"name":"update","parameterTypes":["org.apache.ibatis.mapping.MappedStatement","java.lang.Object"] }]
+},
+{
+  "name":"org.apache.ibatis.executor.SimpleExecutor"
+},
+{
+  "name":"org.apache.ibatis.executor.resultset.DefaultResultSetHandler"
+},
+{
+  "name":"org.apache.ibatis.executor.statement.PreparedStatementHandler"
+},
+{
+  "name":"org.apache.ibatis.executor.statement.RoutingStatementHandler"
 },
 {
   "name":"org.apache.ibatis.executor.statement.StatementHandler",
@@ -1539,6 +1753,9 @@
 },
 {
   "name":"org.apache.ibatis.javassist.util.proxy.ProxyFactory"
+},
+{
+  "name":"org.apache.ibatis.logging.jdbc.ResultSetLogger"
 },
 {
   "name":"org.apache.ibatis.logging.slf4j.Slf4jImpl",
@@ -1572,6 +1789,12 @@
 {
   "name":"org.apache.ibatis.plugin.Intercepts",
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.apache.ibatis.plugin.Invocation"
+},
+{
+  "name":"org.apache.ibatis.plugin.Plugin"
 },
 {
   "name":"org.apache.ibatis.plugin.Signature",
@@ -1610,10 +1833,19 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"org.apache.ibatis.session.defaults.DefaultSqlSession"
+},
+{
   "name":"org.apache.ibatis.session.defaults.DefaultSqlSessionFactory",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"close","parameterTypes":[] }, {"name":"getConfiguration","parameterTypes":[] }, {"name":"openSession","parameterTypes":[] }, {"name":"openSession","parameterTypes":["java.sql.Connection"] }, {"name":"openSession","parameterTypes":["org.apache.ibatis.session.ExecutorType"] }, {"name":"openSession","parameterTypes":["org.apache.ibatis.session.ExecutorType","java.sql.Connection"] }, {"name":"openSession","parameterTypes":["org.apache.ibatis.session.ExecutorType","org.apache.ibatis.session.TransactionIsolationLevel"] }, {"name":"openSession","parameterTypes":["org.apache.ibatis.session.ExecutorType","boolean"] }, {"name":"openSession","parameterTypes":["org.apache.ibatis.session.TransactionIsolationLevel"] }, {"name":"openSession","parameterTypes":["boolean"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.apache.ibatis.type.BaseTypeHandler"
+},
+{
+  "name":"org.apache.ibatis.type.LongTypeHandler"
 },
 {
   "name":"org.apache.jasper.compiler.JspConfig"
@@ -1646,6 +1878,21 @@
 {
   "name":"org.apache.tomcat.util.net.NioEndpoint",
   "queryAllPublicMethods":true
+},
+{
+  "name":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor"
+},
+{
+  "name":"org.apache.tomcat.util.net.SocketProcessorBase"
+},
+{
+  "name":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable"
+},
+{
+  "name":"org.apache.tomcat.util.threads.ThreadPoolExecutor"
+},
+{
+  "name":"org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker"
 },
 {
   "name":"org.apache.tomcat.websocket.server.WsFilter",
@@ -1699,6 +1946,9 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"org.h2.jdbc.JdbcResultSet"
+},
+{
   "name":"org.h2.mvstore.MVStore$TxCounter",
   "fields":[{"name":"counter"}]
 },
@@ -1708,6 +1958,9 @@
 },
 {
   "name":"org.h2.server.web.JakartaWebServlet"
+},
+{
+  "name":"org.h2.value.ValueStringBase"
 },
 {
   "name":"org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager"
@@ -1750,6 +2003,9 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"clearCache","parameterTypes":[] }, {"name":"close","parameterTypes":[] }, {"name":"commit","parameterTypes":[] }, {"name":"commit","parameterTypes":["boolean"] }, {"name":"delete","parameterTypes":["java.lang.String"] }, {"name":"delete","parameterTypes":["java.lang.String","java.lang.Object"] }, {"name":"destroy","parameterTypes":[] }, {"name":"flushStatements","parameterTypes":[] }, {"name":"getConfiguration","parameterTypes":[] }, {"name":"getConnection","parameterTypes":[] }, {"name":"getMapper","parameterTypes":["java.lang.Class"] }, {"name":"insert","parameterTypes":["java.lang.String"] }, {"name":"insert","parameterTypes":["java.lang.String","java.lang.Object"] }, {"name":"rollback","parameterTypes":[] }, {"name":"rollback","parameterTypes":["boolean"] }, {"name":"select","parameterTypes":["java.lang.String","java.lang.Object","org.apache.ibatis.session.ResultHandler"] }, {"name":"select","parameterTypes":["java.lang.String","java.lang.Object","org.apache.ibatis.session.RowBounds","org.apache.ibatis.session.ResultHandler"] }, {"name":"select","parameterTypes":["java.lang.String","org.apache.ibatis.session.ResultHandler"] }, {"name":"selectCursor","parameterTypes":["java.lang.String"] }, {"name":"selectCursor","parameterTypes":["java.lang.String","java.lang.Object"] }, {"name":"selectCursor","parameterTypes":["java.lang.String","java.lang.Object","org.apache.ibatis.session.RowBounds"] }, {"name":"selectList","parameterTypes":["java.lang.String"] }, {"name":"selectList","parameterTypes":["java.lang.String","java.lang.Object"] }, {"name":"selectList","parameterTypes":["java.lang.String","java.lang.Object","org.apache.ibatis.session.RowBounds"] }, {"name":"selectMap","parameterTypes":["java.lang.String","java.lang.Object","java.lang.String"] }, {"name":"selectMap","parameterTypes":["java.lang.String","java.lang.Object","java.lang.String","org.apache.ibatis.session.RowBounds"] }, {"name":"selectMap","parameterTypes":["java.lang.String","java.lang.String"] }, {"name":"selectOne","parameterTypes":["java.lang.String"] }, {"name":"selectOne","parameterTypes":["java.lang.String","java.lang.Object"] }, {"name":"update","parameterTypes":["java.lang.String"] }, {"name":"update","parameterTypes":["java.lang.String","java.lang.Object"] }]
+},
+{
+  "name":"org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor"
 },
 {
   "name":"org.mybatis.spring.mapper.MapperFactoryBean",
@@ -1799,14 +2055,29 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"org.springframework.aop.SpringProxy",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.aop.TargetClassAware",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"determineBeanType","parameterTypes":["java.lang.Class","java.lang.String"] }, {"name":"postProcessAfterInitialization","parameterTypes":["java.lang.Object","java.lang.String"] }, {"name":"setBeforeExistingAdvisors","parameterTypes":["boolean"] }]
 },
 {
+  "name":"org.springframework.aop.framework.Advised",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"org.springframework.aop.framework.AopInfrastructureBean",
   "queryAllPublicMethods":true
+},
+{
+  "name":"org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor"
 },
 {
   "name":"org.springframework.aop.framework.ProxyConfig",
@@ -1859,6 +2130,9 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"equals","parameterTypes":["java.lang.Object"] }, {"name":"getOrder","parameterTypes":[] }, {"name":"hashCode","parameterTypes":[] }, {"name":"setOrder","parameterTypes":["int"] }]
+},
+{
+  "name":"org.springframework.aop.support.AopUtils"
 },
 {
   "name":"org.springframework.aot.hint.annotation.Reflective",
@@ -1969,6 +2243,10 @@
   "name":"org.springframework.beans.factory.support.NullBean",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.ApplicationRunner",
@@ -3074,7 +3352,7 @@
   "name":"org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
-  "methods":[{"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
+  "methods":[{"name":"close","parameterTypes":[] }, {"name":"error","parameterTypes":["jakarta.servlet.http.HttpServletRequest"] }, {"name":"shutdown","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.web.servlet.error.DefaultErrorViewResolver",
@@ -3718,6 +3996,15 @@
   "name":"org.springframework.cache.interceptor.CacheAspectSupport"
 },
 {
+  "name":"org.springframework.cglib.proxy.Dispatcher"
+},
+{
+  "name":"org.springframework.cglib.proxy.MethodInterceptor"
+},
+{
+  "name":"org.springframework.cglib.proxy.NoOp"
+},
+{
   "name":"org.springframework.cloud.commons.util.InetUtils"
 },
 {
@@ -4149,6 +4436,12 @@
   "methods":[{"name":"afterPropertiesSet","parameterTypes":[] }, {"name":"close","parameterTypes":[] }, {"name":"shutdown","parameterTypes":[] }]
 },
 {
+  "name":"org.springframework.jdbc.support.SQLErrorCodes",
+  "allDeclaredFields":true,
+  "queryAllPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"setBadSqlGrammarCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setCannotAcquireLockCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setCannotSerializeTransactionCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setDataAccessResourceFailureCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setDataIntegrityViolationCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setDatabaseProductName","parameterTypes":["java.lang.String"] }, {"name":"setDatabaseProductNames","parameterTypes":["java.lang.String[]"] }, {"name":"setDeadlockLoserCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setDuplicateKeyCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setInvalidResultSetAccessCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setPermissionDeniedCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setTransientDataAccessResourceCodes","parameterTypes":["java.lang.String[]"] }, {"name":"setUseSqlStateForTranslation","parameterTypes":["boolean"] }]
+},
+{
   "name":"org.springframework.jms.core.JmsTemplate"
 },
 {
@@ -4440,7 +4733,15 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"org.springframework.web.bind.annotation.DeleteMapping",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"org.springframework.web.bind.annotation.ExceptionHandler",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.web.bind.annotation.GetMapping",
   "queryAllDeclaredMethods":true
 },
 {
@@ -4448,7 +4749,19 @@
   "queryAllDeclaredMethods":true
 },
 {
+  "name":"org.springframework.web.bind.annotation.PostMapping",
+  "queryAllDeclaredMethods":true
+},
+{
   "name":"org.springframework.web.bind.annotation.RequestMapping",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.web.bind.annotation.ResponseBody",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.web.bind.annotation.RestController",
   "queryAllDeclaredMethods":true
 },
 {
@@ -4511,10 +4824,17 @@
   "methods":[{"name":"setThreadContextInheritable","parameterTypes":["boolean"] }]
 },
 {
+  "name":"org.springframework.web.method.annotation.ExceptionHandlerMethodResolver",
+  "methods":[{"name":"noMatchingExceptionHandler","parameterTypes":[] }]
+},
+{
   "name":"org.springframework.web.method.support.CompositeUriComponentsContributor",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"close","parameterTypes":[] }, {"name":"contributeMethodArgument","parameterTypes":["org.springframework.core.MethodParameter","java.lang.Object","org.springframework.web.util.UriComponentsBuilder","java.util.Map","org.springframework.core.convert.ConversionService"] }, {"name":"shutdown","parameterTypes":[] }, {"name":"supportsParameter","parameterTypes":["org.springframework.core.MethodParameter"] }]
+},
+{
+  "name":"org.springframework.web.method.support.InvocableHandlerMethod"
 },
 {
   "name":"org.springframework.web.method.support.UriComponentsContributor",
@@ -4745,6 +5065,9 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"afterPropertiesSet","parameterTypes":[] }, {"name":"close","parameterTypes":[] }, {"name":"match","parameterTypes":["jakarta.servlet.http.HttpServletRequest","java.lang.String"] }, {"name":"registerMapping","parameterTypes":["java.lang.Object","java.lang.Object","java.lang.reflect.Method"] }, {"name":"setEmbeddedValueResolver","parameterTypes":["org.springframework.util.StringValueResolver"] }, {"name":"setPatternParser","parameterTypes":["org.springframework.web.util.pattern.PathPatternParser"] }, {"name":"shutdown","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod"
 },
 {
   "name":"org.springframework.web.servlet.resource.ResourceUrlProvider",

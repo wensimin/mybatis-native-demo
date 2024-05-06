@@ -3,6 +3,9 @@
     "interfaces":["com.example.nativedemo.mapper.MessagesMapper"]
   },
   {
+    "interfaces":["com.example.nativedemo.mapper.SysUserMapper"]
+  },
+  {
     "interfaces":["java.lang.reflect.ParameterizedType","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"]
   },
   {
